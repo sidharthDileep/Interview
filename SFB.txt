@@ -1,0 +1,26 @@
+SFB
+------
+106th
+-------
+
+boolean x;
+if(x){
+print "hello";
+}else{
+print "";
+}
+
+JWT token - OAuth
+
+restTemplate - postForEntity and postForObject
+
+
+employees.comparator.comparing(Employee::getSalary, Comparator.reverseOrder())
+		 .findFirst();
+		 
+		 
+SELECT e FROM Employee e ORDER BY id DESC limit 1;
+
+findBy
+
+

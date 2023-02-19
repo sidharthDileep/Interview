@@ -1,0 +1,53 @@
+LocationRisk
+Existing service(fuse framework) migrated to spring boot framework. 
+
+The service 
+HTTP Method - GET
+PathParameter - riskType (BA, CA etc)
+QueryParameters - address, channel etc.
+Response - RiskFactors
+
+The risk Factors are needed by many other services for calcualtion of premium.
+Other factors include VehicleRisk, credit factors etc.
+CommercialEnrichmentData aggragates all riskFactors and EnrichmnetPlan is created.
+
+
+LocationFileFetch
+This API will recieve locationRIskFile from SFG location and process records in the file to Postgres DB
+App polls the folder, once file is available , pp reads record by record and written to queue
+
+LocationFileProcess
+App reads from queue
+each record from the queue wil be serialized using opencsv in springboot and validated.
+ost validated records are written to DB based on rules.
+an failed records by DB will be written to queue.
+if DB is down, the records are written to reprocess queue and there will be a scheduler to put messages back to main queue.
+after some time error report gets generated
+
+
+ErrorReporing
+App will be triggered based on a timer set.
+Will connect to Error queue and writes and writes messagge to an ouput csv file.
+while writing to output csv file, keep track of the total failed records.
+once the file is written , then connect to info queue to get the file name and total records count in the batch.
+map the request to emailService.
+
+
+
+
+CommercialCredit
+Key part of underwriting jorney for commercial lines insurance. its failure would impact the premium calculation and 
+therefore possible profitability and risk of each quote.
+API obtains commercialcredit info for a given company from experian.
+-------------------------------------------------------------------------------------------------------------------------------------
+
+what are the challenges you faces and how did you overcome?
+
+your contribution?
+
+How did you fix the last bug in the app?
+there was a mismatch in the total count, success count and error count. the tester reported the issue in the logging statement.
+
+commercialCredit recieve info from experian. So, we took the data from the response and map it to the CommercialCredit response. 
+we will do some calculations, creditNumber is calculated. in some edge cases of the value, one attributes needs to be changed. I missed that.
+depending on the products and address

@@ -1,0 +1,110 @@
+public class Interview {
+
+		public static void main(String[] args) {
+			System.out.println(m1(1));
+			System.out.println(m1("Hello"));
+			System.out.println(m1(new String ("World")));
+			
+			
+		}
+		
+		public static String m1(String s) {
+			System.out.println("In String");
+			return s;
+			
+		}
+		public static String m1(Object s) {
+			System.out.println("In Object");
+			String str = s.toString();
+			return str;
+			
+		}
+
+	} 
+	
+	
+	
+	class A{
+		
+	}
+	
+	class B extends A implements Runnable{
+		
+	}
+	
+	
+A a1 = new B();
+B b1 = new A(); 
+
+
+String str = "Hello";
+str = str + "World";
+
+class final 
+variables should be private and final
+getters
+constructor
+
+
+List<Integer> numbers = new ArrayList<>();
+
+sum of even num
+
+
+
+
+numbers.stream()
+	   .filter(n->n%2 == 0)
+	   .sum();
+	   
+	   
+
+int[] a = new int[1, 0, 0, 1, 1, 0 ,1];
+
+0, 0, 0, 1, 1, 1, 1
+
+for(int i : a){
+	if( i == 0){
+	 count++;
+	 }
+}
+for(int j=0; j<count; j++){
+	a[j] = 0;
+	}
+	
+for(int k=0; k<count; k++){
+	a[k] = 1;
+	}
+	
+	
+	
+	
+
+boolean flag = false;
+for(int i=2; i<n/2; i++){
+	if(n % i == 0){
+		flag = true;
+	}
+}
+
+if(!flag){
+System.out.println("true");
+} else {
+System.out.println("false");
+}
+
+
+why data variables are private and getter setter methods are public?
+
+abstract classes and interfaces? concrete methods?
+
+all methods need to be implemented from interfaces?
+
+lambda uses? implementing ways?
+
+static methods in interfaces?
+
+streams?
+
+F-intefaces use in lambdas?
+

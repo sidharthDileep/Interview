@@ -1,0 +1,19 @@
+Cognizant - Apple
+==================
+
+Collection class super class?
+is logger class singleton?
+what data structure is of hashmap keys?
+how do you validate request?
+API gateway implementation?
+spring security?
+microservices principles?
+spring boot factory implementation done where?
+parellel stream?
+how do u validate request?
+balanced tree height?
+binary search tree?
+where actuators are used? (config servers)
+where AOP is used? (circuit breaker)
+api gateway uses?
+what will Callable return?

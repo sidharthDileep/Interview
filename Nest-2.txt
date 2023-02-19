@@ -1,0 +1,13 @@
+Nest Managerial
+---------------
+49th
+-----
+
+lazy loading
+CI
+devops
+authentication
+
+functions and SP?
+
+distributed transactions?

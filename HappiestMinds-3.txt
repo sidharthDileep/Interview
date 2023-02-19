@@ -1,0 +1,28 @@
+HappiestMinds-Managerial
+-------------------------
+91st
+-----
+
+
+expected: sid - 3 kumar - 2, arthur - 2
+
+String str = "sid,arthur,kumar,sid,sid,kumar,arthur";
+
+String[] strArry;
+strArry = str.split(",");
+int count = 0;
+Map<String, Integer> map = new HashMap<>();
+int k=0;
+for(int i=0; i<str.length; i++){
+	if(!map.contains(strArray[i]){
+	for(int j=1; j<str.length; j++){
+		if(strArry[i].equals(strArry[j])){
+			count++;
+			map.put(str[i], count);
+		}
+		System.out.println(strArray[i] + " " + map.get(strArray[i]));
+		count = 0;
+		}
+}
+}
+

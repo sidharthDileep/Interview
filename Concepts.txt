@@ -1,0 +1,3 @@
+CAP
+Direct Acyclic Graph
+Consistant hashing

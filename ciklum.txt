@@ -1,0 +1,97 @@
+Ciklum
+----------
+
+1)SOLID
+
+public class GeneralTaxProcessor { 
+  
+    private TaxService taxService; 
+
+    
+    public List<TaxesDTO> calculateTaxes(Collection<Employee> employees) { 
+        ... 
+    } 
+
+    public BigDecimal calculateAverageTax(Collection<Employee> employees) { 
+        ... 
+    }
+} 
+
+public class NetherlandsTaxProcessor extends GeneralTaxProcessor { 
+  
+    @Override 
+    public List<TaxesDTO> calculateTaxes(Collection<Employee> employees) { 
+        ... 
+    } 
+    
+    @Override 
+    public BigDecimal calculateAverageTax(Collection<Employee> employees) { 
+        return null; 
+    } 
+}
+
+CREATE TABLE IF NOT EXISTS `department` (
+  `id` int(6) unsigned NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `department` VALUES 
+    ('1','IT'),
+    ('2','Accounting'),
+    ('3','Sales'),
+    ('4','Marketing');
+
+CREATE TABLE IF NOT EXISTS `employee` (
+  `id` int(6) unsigned NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `department_id` int(6) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `department_id_idx` (`department_id`),
+  CONSTRAINT `department_employee` FOREIGN KEY (`department_id`) REFERENCES `department` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `employee` VALUES 
+    ('1','Mykhailo Marchenko','1'),
+    ('2','Andrii Kovalov','2'),
+    ('3','Sergii Kovalov','3'),
+    ('4','Andrii Khvilnuk','4'),
+    ('5','Alia Usenova','4'),
+    ('6','Miroslav Krimchenko','1'); 
+	
+2)	Base
+3)	n+1 problem
+4)	dirty checking mechanism
+5)  ACID
+6)  BASE
+	
+https://www.db-fiddle.com/f/6cEDVA7nT8P9qXVsfRjGU2/0#&togetherjs=AcqEgr8jKd
+@Configuration 
+public class AppConfig {
+
+@Bean 
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) 
+public PrototypeBean prototypeBean() { 
+return new PrototypeBean();
+   }
+
+
+ @Bean 
+public SingletonBean singletonBean() { 
+return new SingletonBean(); 
+   }
+}
+
+7)CAP
+8)Isolation and Propogation in Transactional
+9)How transactional is working
+10)blue green deployment
+11)mock and spy
+12)why mock is required
+13)testing pyramid
+14)diff btw future and completableFuture
+15)indexing in DB? disadvantages of indexing?
+
+

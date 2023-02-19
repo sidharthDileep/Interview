@@ -1,0 +1,26 @@
+41st
+-----
+Quest-3
+
+List<Integer> list = new ArrayList<>(1,10,15,8,49,13,25,98,32,15,98);
+
+Map<Integer, Integer> map = new HashMap<>();
+
+for(int i=0; i<list.size(); i++){
+
+map.put(list.get(i), map.getOrDefault(list.get(i), 0) + 1);
+
+}
+
+List<Integer> duplicatList = map.stream()
+	.filter(a -> a.getValue > 1)
+	.collect(Collectors.toList());
+	
+	
+How do we get map elements without keys?
+
+why linkedlist is better for manipulation of data?
+
+
+
+	

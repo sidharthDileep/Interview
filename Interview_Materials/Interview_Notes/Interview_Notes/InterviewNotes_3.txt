@@ -1,0 +1,141 @@
+A plugin is an extension to Maven, something used to produce your artifact 
+(maven-jar-plugin for an example, is used to, you guess it, make a jar out of your compiled classes and resources).
+
+A dependency is a library that is needed by the application you are building, at compile and/or test and/or runtime time.
+
+Though both are the .jar files, the basic difference between them is plugin is used to execute the operations that we perform in maven, 
+and dependency is added to the classpath when we execute our operations.
+
+You can’t use the plugin as a dependency because it just adds the plugin to the classpath and doesn't start a compilation.
+
+
+----------------------------------------------------------------
+
+The main reasons not to use H2 (or HSQLDB, or Derby) for production are:
+
+Probability of critical bugs: compared to the 'big' databases Oracle, IBM DB 2, MS SQL Server, MySQL, PostgreSQL, the Java databases are relatively new and therefore possibly not as stable (have bugs). 
+Please note this is true for all newer products, including NoSQL databases, and new releases of the 'big' databases. Generally, the more a product is tested, the less the probability of bugs. 
+Of course it depends on your use case whether it makes sense to pay (possibly a lot of money) for this advantage. 
+In any case you will need to backup the data, in case of hardware failure for example.
+
+Missing features and optimizations: the 'big' databases have more features and optimizations for special use cases. 
+Whether or not you need those features is up to you.
+
+Commercial support: it's easier to get support for bigger databases. Please note commercial support is available for H2 as well. HSQLDB also provides commercial support. 
+IBM used to provide support for Apache Derby (well, IBM Cloudscape), but I believe they stopped.
+
+----------------------------------------
+
+Singleton: It returns a single bean instance per Spring IoC container.This single instance is stored in a cache of such singleton beans, and all subsequent requests and references for that named bean return the cached object. If no bean scope is specified in the configuration file, singleton is default. 
+Real world example: connection to a database
+
+Prototype: It returns a new bean instance each time it is requested. It does not store any cache version like singleton. 
+Real world example: declare configured form elements (a textbox configured to validate names, e-mail addresses for example) and get "living" instances of them for every form being created
+
+Request: It returns a single bean instance per HTTP request. 
+Real world example: information that should only be valid on one page like the result of a search or the confirmation of an order. The bean will be valid until the page is reloaded.
+
+Session: It returns a single bean instance per HTTP session (User level session). 
+Real world example: to hold authentication information getting invalidated when the session is closed (by timeout or logout). You can store other user information that you don't want to reload with every request here as well.
+
+GlobalSession: It returns a single bean instance per global HTTP session. 
+It is only valid in the context of a web-aware Spring ApplicationContext (Application level session). 
+It is similar to the Session scope and really only makes sense in the context of portlet-based web applications. 
+The portlet specification defines the notion of a global Session that is shared among all of the various portlets that make up a single portlet web application. 
+Beans defined at the global session scope are bound to the lifetime of the global portlet Session.
+
+----------------------------------------------------------
+curl -s -k -X <<COMMAND>> –header Content-Type: application/json’ \
+        –header ‘Accept:application/json’  \
+        <<AUTHENTICATION>>  <<OPTIONALDATA>> \
+        <<RESTAPIENDPOINT>>
+-----------------------------------------
+the parameter of Objects.hash is Object.... This has two main consequences:
+
+Primitive values used in the hash code calculation have to be boxed, e.g. this.id is converted from long to Long.
+An Object[] has to be created to invoke the method.
+The cost of creating of these "unnecessary" objects may add up if hashCode is called frequently.
+---------------------------------------------
+Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. 
+Docker provides the ability to package and run an application in a loosely isolated environment called a container. 
+The isolation and security allows you to run many containers simultaneously on a given host. Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host. 
+You can easily share containers while you work, and be sure that everyone you share with gets the same container that works in the same way.
+
+Docker uses a client-server architecture. The Docker client talks to the Docker daemon, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon can run on the same system, or you can connect a Docker client to a remote Docker daemon. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. 
+Another Docker client is Docker Compose, that lets you work with applications consisting of a set of containers.
+
+-----------------------------------
+
+Both String and Char[] array are used to store the textual data but choosing one over the other is more difficult. Maybe we can get the idea from the immutability of String why char[] array is preferred over String for storing sensitive information data like password, SSN, etc.
+
+Using the plain string is a much higher chance of accidentally printing the password to logs or some other insecure places where char[] array is less vulnerable.
+Since String is immutable, there is no method defined that allow us to change or overwrite the content of the string. 
+bThis feature makes string objects unstable for storing secure information such as passwords, SSN, etc. 
+We should always store the secure information in char[] array rather than String.
+Since String is immutable if we store the password as plain text it will be available in memory until the garbage collector cleans it. Since string used String Constant Pool (SCP) for re-usability of a string, there will be a pretty chance that it will remain in memory for a long duration. 
+Since anyone who has access to memory dump can easily find the password in plain text that's another reason should use encrypt password than plain text.
+If we notice in Java Swing applications, there is a method of JPasswordField getPassword() which return char[] and the deprecated method getText() which return the password in plain text. So java itself recommending to use the get password() method.
+Another reason for storing a password in char[] array, because char[] can be sanitized, for example, after usage one can override a clear password with junk, while String is immutable in Java.
+---------------------------------------
+
+widening and boxing of primitive types can not work together.
+
+We are invoking another method with the argument of Long wrapper Object. 
+The compiler starts searching for the method having the same reference type (Long wrapper class). 
+Since there is no method having with parameter of Long wrapper class. 
+So, It searches for a method that can accept the parameter bigger than long primitive data type as an argument. 
+In this case, it finds a method with float primitive data type and invokes it.
+
+In method overloading, you may come across a situation where a signature takes reference type or a primitive type as a formal argument. The compiler first searches a method with parameter(s) of the same data type(s). If you are using wrapper class Object as an actual argument and the compiler does not find the method with parameter(s) of the same reference type (i.e. class or interface type), then it starts searching a method with parameter(s) having the corresponding primitive data type.
+
+-----------------------------------------
+DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+
+UPDATE Customers
+SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+WHERE CustomerID = 1;
+
+AWS
+
+sudo su -
+vi /etc/hostname/
+useradd
+passwd
+visudo
+vi /etc/ssh/sshd_config
+service sshd reload
+ssh-keygen
+
+SQS - highly scalabale, hosted queue for storing messages in transit between computers
+Used for distributed/decoupled applications
+SQS is pull based
+--------------------------
+read replicas and database cache, increase instance size and connection pooling, cache
+-----------------------------------------
+
+hashCode and equals contract
+what all things to keep in mind when creating an API
+finalize() method
+GC
+advantages of cloud
+client side and server side discovery
+--------------------------------------
+hascode and equals implementation
+GC
+extends and super
+
+---------------------------------
+pipe
+find
+grep
+awk - awk '$2~/i/ {print $1}' text1.txt
+sudo bash
+sudo chown username text.txt
+sudo chgrp groupname text.txt
+
+
+Reflection
+why Concurrent collection
+deployment descriptor
+PACT 
+sort using stacks

@@ -1,0 +1,24 @@
+Quess
+-------
+86th
+------
+
+dynamic binding
+abstraction and encapsulation
+static blocks
+hashmap hashtavle
+static
+synchronozedMap
+IOC
+how do we authenticate in spring security
+JSP and servlets - lifecycle
+implicit object JSP
+cookies
+session
+AJAX
+xml parsing
+
+list.stream().compare(Compartor.comapringInt, comparator.reverseOrder());
+
+list.stream().sorted().collect(Collectors.toList());
+treeset reverse order

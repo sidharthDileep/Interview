@@ -1,0 +1,35 @@
+Rakuten
+--------
+109th
+------
+
+mysql and postgres diff?
+java 8 to 17 improvements?
+outOFMemory? how it is caused? how to debug?
+arrayList and hashSet? which is better?
+
+------------------------------------------------
+
+Need to learn
+---------------
+
+repository save mock
+spring basic auth
+logging
+java 8 -> 17
+Collections
+
+
+-------------------------------------
+Java 11
+copyOf
+FIles.readString
+strip
+lines
+transform
+formatted
+type inference - java 10
+switch exp = java 14
+textBlockrunner
+record
+-----------------------------------

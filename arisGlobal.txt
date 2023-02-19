@@ -1,0 +1,87 @@
+arisGlobal
+-----------
+71st
+-----
+
+path and classpath
+static method
+
+
+String s = "abc123xyz456pq";
+String new = "";
+StringBilder sb = new StringBuilder();
+
+char ch;
+
+for(int i=0; i<s.length-1; i++){
+
+ch = s.charAt(i);
+
+if(character.isAlphabetic(ch)){
+sb.append(ch);
+}
+
+}
+--------------------------------
+
+String str = "aabbacccccca";
+
+Map<String, Integer> map  = new HashMap<>();
+
+
+for(int i=0; i<str.length; i++){
+map.put(str[i], map.getOrDefault(str[i], 0) + 1);
+}
+
+map.stream().forEach((k, v) -> System.out.println(k + " " + v));
+int l=0;
+char ch;
+int r=1;
+for(int j=0; j<str.length; j++){
+if(l != null){
+
+
+
+}
+
+
+
+
+---------------------------------------------
+String str = "xyz";
+
+xyz
+yzx
+zyx
+xzy
+yxz
+zxy
+
+char ch;
+char temp;
+int j = 1;
+
+List<String> list = new ArrayList<>();
+
+for(int i=0; i<str.length; i++){
+
+list.add(str);
+
+temp = str[j];
+str[j] = str[j+1];
+str[j+1] = temp;
+
+
+
+list.add(str);
+
+
+}
+
+xyz
+xzy
+
+
+URL rewriting
+
+hashMap Synchronized? how to make?

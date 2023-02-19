@@ -1,0 +1,404 @@
+extract month from date in sql
+round to 4 after division
+
+32524727	Ernst & Young LLP
+
+Elammukilan.Ramasamy@in.ey.com
+Prakhar.Pradhan@in.ey.com
+Pranjal.Kumar@in.ey.com
+Rachana.P@in.ey.com
+Rakesh.Sharma1@in.ey.com
+Sree.Kumar@in.ey.com
+Suraj.Chavan@in.ey.com
+Vikash.Mishra@in.ey.com
+
+
+
+
+
+[12:30] Nagaraj Krishnareddy
+GS Interview:
+
+Microservices, async calls, Kafka (Depth concepts)
+Springboot, spring annotations, Rest Methods
+2 programs he gave and provided output based on java 8, but he expected java 7
+1- Sorting and filter employee details based on their age
+2- String manupilation 
+Implementation of swagger
+Git Clone command
+map split java8
+
+[12:31] Subham L Burnwal
+
+------------------------------------------------NT questionnaire----------------------------------------------------
+
+
+Security implementation of the recent project like authentication and authorization. JWT.
+
+
+Project architecture.
+
+
+Microservices Architecture.
+
+
+Cache implementation
+
+
+JUnit
+
+
+Java 8 -> stream, map, flatMap
+
+
+Laziness and performance of stream api
+
+
+SQL like, underscore wildcard
+
+
+Multithreading
+
+
+DB password changed while some Java Batch have active connection with DB doing changes to the records. What will happen with the intermediate changes
+made to the records and what will happen to the Batch.
+
+
+Kafka or any messaging queue.
+
+
+performance of static vs non static method for any utility class when calling the method millions of times per minute.
+
+native query in JPA
+
+
+[14:31] Now Virtual Agent
+If Any issues - Please check with  mydaysupport.south@in.ey.com
+
+
+SQL:
+
+1. we have FUNDS table and we will have to write query to fetch month, fundType, total invested amount against that fundType.
+This data should be in order to invested_date and fundType.
+Ans: select MONTH(order_date) as month , fund_name , SUM(order_amount) from Funds
+group by MONTH(order_date) , fund_name order by month
+
+2. Bllood bank: Two tables will be there, DONOR and ACCEPTOR.
+you will have to fetch CITY, amount_ratio. group by city
+amount ratio -> means (amout of DONOR/amount of ACCEPTOR)
+
+Ans: 
+SELECT acceptor.city, (donor.amount/acceptor.amount ) AS ratio FROM acceptor INNER JOIN donor ON acceptor.city=donor.city GROUP BY donor.city ORDER BY ratio DESC;
+
+
+(SELECT acceptor.city, (sum(donor.amount)/sum(acceptor.amount) ) AS ratio FROM acceptor INNER JOIN donor ON acceptor.city=donor.city GROUP BY acceptor.city ORDER BY ratio DESC LIMIT 1)
+UNION
+(SELECT acceptor.city, (sum(donor.amount)/sum(acceptor.amount) ) AS ratio FROM acceptor INNER JOIN donor ON acceptor.city=donor.city GROUP BY acceptor.city ORDER BY ratio LIMIT 1)
+;
+
+3. SQL ques
+---------
+select t2.[Category]
+    ,(select min(t.Product_Id) from #Product t where  t.Category=t2.Category and t.Discount=max(t2.Discount))
+    ,max(t2.Discount) from #Product t2
+    group by [Category]
+
+4. a constructor company pays its worker on an hourly basis.
+given a data base of employee information return list of employee names ans the amount they are owned the amount owed is 
+the sum of hours worked 30 per hour ,plus any previous balance.only include employee who are owned an amount and order the result by employee
+
+labour table--> (id,name, previous balance)
+daily_hours -->(labourid,entry_time(varchar),exit time(varchar))
+
+out put:
+name amount_payable
+
+Ans: select name ,
+((Sum(DATEDIFF(hour, Dhrs.entry_time, Dhrs.exit_time)) * 30 ) + Lbr.previous_balance ) as amount_payable
+from Laboures Lbr
+inner join Daily_Hours Dhrs on Dhrs.labour_id = Lbr.id
+group by name , Lbr.previous_balance
+
+
+
+Java Question:
+
+Convert the characters of string from "01" to "10" and count the number of iterations done to convert the whole string
+
+Example - "011001"
+
+so, in first iteration it will be - "101010"
+
+second iteration - "110100"
+
+third iteration - "111000"
+
+so the output would be 3 as total 3 iterations are required to convert the whole string
+
+public class Convert01To10 {
+
+    public static void main(String[] args) {
+
+        //PARADE IN HACKERLAND
+
+        String str = "011001";
+        int count = findTheTimes(str);
+        System.out.println(count);
+
+    }
+
+    public static int findTheTimes(String str) {
+        int times = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.contains("01")) {
+                str = str.replaceAll("01", "10");
+                System.out.println(str);
+                times++;
+            }
+        }
+        return times;
+    }
+}
+
+Longest Working Slot
+=====================
+
+int initialTime=0;
+
+int longestTime=0;
+
+int id=0;
+
+String albhabet ="abcdefghijklmnopqrstuvwxyz";
+
+char[] cArray = albhabet.toCharArray();
+
+for (int i=0; leaveTimes.size()>1;i++){
+
+int timeslot =leaveTimes.get(i).get(1)- initialTime;
+
+if(timeslot >longestTime)
+
+LongestTime =timeSlot;
+
+id=leaveTimes.get(1).get(0);
+
+}
+
+initialTime= leaveTimes.get(i).get(1);
+
+} return cArray[id];
+
+
+Traffic ques
+-------------
+select t1.CLIENT, group_concat(distinct t1.PROTOCOL) FROM traffic t1 INNER JOIN traffic t2 on t1.client = t2.client group by t1.client ;
+
+
+[12:51] Harshal Khandelwal
+Not sure but may be we need to use something like this
+Distinct SEPARATOR(t1.PROTOCOL, ', ')
+
+[12:53] Pranjal Kumar
+group_concat is worked on local DB by using mysql
+
+Parade in HackerLand
+---------------------
+
+int oneCount = 0, n = color.length() - 1;
+
+int extraZeroContinousCount = 0;
+
+int result = 0;
+
+while (n >= 0 && color.charAt(n) == '0') {
+
+  n--;
+
+}
+
+for (int i = n; i >= 0; i--) {
+
+  int curr = color.charAt(i);
+
+  if (curr == '1') {
+
+    oneCount++;
+
+    extraZeroContinousCount = 0;
+
+    continue;
+
+  }
+
+
+
+  if (i != n - 1 && curr == color.charAt(i + 1)) {
+
+    ++extraZeroContinousCount;
+
+  }
+
+  result = Math.max(result, oneCount + extraZeroContinousCount);
+
+}
+
+
+
+if (oneCount == 0 || n == oneCount) {
+
+  return 0;
+
+}
+
+
+
+return result;
+
+Java Ques
+-----------
+
+public class Convert01To10 {
+
+    public static void main(String[] args) {
+
+        //PARADE IN HACKERLAND
+
+        String str = "011001";
+        int count = findTheTimes(str);
+        System.out.println(count);
+
+    }
+
+    public static int findTheTimes(String str) {
+        int times = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.contains("01")) {
+                str = str.replaceAll("01", "10");
+                System.out.println(str);
+                times++;
+            }
+        }
+        return times;
+    }
+}
+
+what happens if we dont implement hashcode in a object key of hashmap?
+how to reverse a string without another variable?
+underlying structure of hashmap?
+String inside?
+cache?
+jpa?
+mq?
+design patterns?
+
+-------------------
+select name ,
+((Sum(DATEDIFF(hour, Dhrs.entry_time, Dhrs.exit_time)) * 30 ) + Lbr.previous_balance ) as amount_payable
+from Laboures Lbr
+inner join Daily_Hours Dhrs on Dhrs.labour_id = Lbr.id
+group by name , Lbr.previous_balance order by name;
+
+MS server
+-----------------------
+WITH summary AS
+(SELECT d.city ct,
+ SUM(d.amount)/a.amt ratio
+FROM donor d
+JOIN (
+ SELECT city, SUM(amount) amt
+ FROM acceptor
+ GROUP BY city) a
+ON a.city = d.city
+GROUP BY d.city)
+-- get the maximum
+(SELECT ct, ratio
+FROM summary
+ORDER BY ratio DESC
+LIMIT 1)
+UNION ALL
+-- and the minimum
+(SELECT ct, ratio
+FROM summary
+ORDER BY ratio
+LIMIT 1)
+---------------------------------------
+def findLongestSingleSlot(leaveTimes
+    n=len(leaveTimes) 
+    mxslot=0 
+    idx=0 
+    prv=0 
+    for i in range(n): 
+        if mxslot<leaveTimes
+            mxslot=leaveTimes
+            idx=leaveTimes[i
+        prv=leaveTimes[i][1
+    return chr(idx+97)
+----------------------------------
+select month(order_date), fund_name, sum(order_amount) from FUNDS group
+month(order_date),fund_name order by month(order_date), fund_name;
+---------------------------------
+select category,product_id,max(discount) from Product group by category 
+order by category,product_id;*/
+select t2.category,(select min(t.product_id) from Product t where 
+t.category=t2.category and t.discount=max(t2.discount)),max(t2.discount) from 
+Product t2 group by Category;
+------------------------------------
+from bisect import bisect_left, bisect_right 
+def getThreeNonOverlappingIntervals(starting, ending): 
+    n = len(starting) 
+    ls, rs = [], [] 
+    for i in range(n): 
+        ls.append(starting[i]) 
+        rs.append(ending[i]) 
+    ls.sort() 
+    rs.sort() 
+    ans = 0 
+    for i in range(n): 
+        l = bisect_left(rs, starting[i]) 
+        r = n - bisect_right(ls, ending[i]) 
+        ans += l * r 
+    return ans
+---------------------------
+map
+design pattern
+swagger
+
+----
+AOP
+logging
+sonar
+queue
+singleton
+microsevices
+restTemplateError
+generics
+---------------------
+pointcut - which method to intercept
+Advice - when to intercept
+Aspect - combination of pointcut and advice
+jointpoint - execution point of instance
+
+Generics enable types(classes and interfaces) to be parameters when defining classes, interfaces and methods
+we can reuse same code with different types
+1) stronger type checks at compile time
+2) we can eliminate type casting
+	List list = new ArrayList();
+	
+3) we can implement generic algorithms
+------------------
+git clone
+git checkout
+git pull origin master
+git push origin master
+git reset HEAD filename
+git checkout -- filename
+
+
+git mv filename updatedfilename
+----
+Wildcards
+
+gwt-put priciple
+when you want to get values out of collection - use upper bound wildcard ( extends )
+when you want to put values to collection - use lower bound wildcard ( super )

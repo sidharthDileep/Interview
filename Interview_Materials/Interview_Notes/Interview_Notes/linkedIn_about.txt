@@ -1,0 +1,11 @@
+A passionate and enthusiastic programmer, having an appetite to learn and explore new things. Interested in full-time opportunities as a Software Engineer/ Developer or Full-stack developer roles. I have experience working as a Developer in a Startup environment. Also, I am well versed in python and have hands-on experience working on full-stack projects using (microservices, fast API, RESTful API, Machine Learning). I am interested in an organization where I can use my skills to achieve the organization's objective simultaneously creating new innovative ideas and get a conducive environment to learn and grow. I am committed to learning as well as motivated to accept challenges and exceeding your expectations.
+
+Skills:
+Languages: Java, Python, C++
+Databases: MySQL, CouchDB, MongoDB
+Tools: Git, Linux, Pycharm, Docker, Jenkins
+Web: JavaScript, REST API, JSON, NodeJS, HTML, CSS, Bootstrap
+Certifications: Python, Problem-solving
+Coding: 3* at Leetcode and codechef 
+
+Feel free to reach out if you have any opportunity that fits my background: ujeshnada96@gmail.com

@@ -1,0 +1,46 @@
+Accolite_3
+-------------
+
+69th
+-----
+
+mehod overloading and overriding
+singleton multithreaded
+
+
+
+
+input = a,b,c!d#&e
+
+output= e,d,c!b#&a
+
+
+char ch;
+String rev = "";
+
+Lis<O
+
+for(int i=input.length-1; i<=0; i++){
+
+ch = input.charAt(i);
+
+if(list.contains(ch))
+	cont
+
+rev = rev + ch;
+
+
+}
+
+employee 
+employee_Id
+employee_name
+company_id
+
+
+company
+company_id
+companay_name
+
+
+SELECT e.employee_name, count(*) FROM Employee e JOIN COMPANY c ON e.comapany_id = c.company_id GROUP BY company_id HAVING count(company_id) > 1;

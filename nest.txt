@@ -1,0 +1,37 @@
+36th
+Nest
+----
+
+Diff btw callable and runnable?
+diff btw beanfactory and applicationcontext?
+why generics?
+multithreading?
+different gc's?
+memory changes in java 8?
+stereotype annotaations?
+use of @enableautoconfiguration?
+@autowired? and @bean?
+diff autowire?
+bean a -> bean b cyclic dependencies?
+service registration?
+ditributed configuration?
+interservice communication?
+distributed tracing and logging?
+Customized object as key in hashmap? what need to take to work properly?
+diff btw treeset & hashset?
+what happens if hashcode is same for hashmap?
+class loaders in java?
+how do we create http response?
+how to exclude certain config?
+
+
+
+
+
+
+
+
+
+
+
+

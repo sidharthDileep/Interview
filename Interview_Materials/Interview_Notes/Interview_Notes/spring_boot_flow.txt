@@ -1,0 +1,236 @@
+Spring Boot Application Internal Working.
+Spring does not generate any code automatically and not using any xml configuration file . so spring uses internally pragmatically configuration done by spring boot developer that are provided by jar.
+we are using just pre-configured jar . and those jar available in:
+
+META-INF/spring.factories
+
+Enable
+Disable
+
+To Enable preconfigured jars we just need to define dependency in pom.xml file.
+
+‘<’dependency’>’
+‘<’groupId’>’org.springframework.boot’<’/groupId’>’
+‘<’artifactId’>’spring-boot-starter-data-jpa’<’/artifactId’>’
+‘<’/dependency’>’
+
+This dependency will load all the jars related to JPA repository and stored into spring.factories.
+you can go to maven dependencies then click and open spring-boot-autoconfigure jar in the last you will see META-INF folder inside this spring.factories here you will find your jar org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration.
+
+Based on @Conditional and @Configuration :
+
+@Configuration(proxyBeanMethods = false)
+@ConditionalOnBean(DataSource.class)
+@ConditionalOnClass(JpaRepository.class)
+@ConditionalOnMissingBean({ JpaRepositoryFactoryBean.class, JpaRepositoryConfigExtension.class })
+@ConditionalOnProperty(prefix = “spring.data.jpa.repositories”, name = “enabled”, havingValue = “true”,
+matchIfMissing = true)
+@Import(JpaRepositoriesRegistrar.class)
+@AutoConfigureAfter({ HibernateJpaAutoConfiguration.class, TaskExecutionAutoConfiguration.class })
+public class JpaRepositoriesAutoConfiguration {
+
+}
+
+@ConditionalOnBean(DataSource.class) :
+— — — — — — — — — — — — — — —
+It will serach for the DataSource bean if it is available then only it will enable JpaRepositoriesAutoConfiguration . So this we need to define DataSource related properties into our property file.
+
+@ConditionalOnClass(JpaRepository.class) :
+— — — — — — — — — — — — — — —
+It will serach for the JpaRepository class if it is available then only it will enable JpaRepositoriesAutoConfiguration .
+
+like this :
+@ConditionalOnMissingBean({ JpaRepositoryFactoryBean.class, JpaRepositoryConfigExtension.class })
+@ConditionalOnProperty(prefix = “spring.data.jpa.repositories”, name = “enabled”, havingValue = “true”, matchIfMissing = true)
+
+If all conditions are true then only it will enable JpaRepositoriesAutoConfiguration class.
+
+The mainly Conditions checked by spring boot :
+
+ 
+
+If all the conditions are satisfied then only spring will enable to the component.
+
+@SpringBootApplication is the main annotation that we used on our main method and this annotation is the combination of these three annotations :
+
+ 
+
+High Level Flow Of Spring Boot And How run Method works :
+================================
+
+From the run method, the main application context is kicked off which in turn searches for the classes annotated with @Configuration, initializes all the declared beans in those configuration classes, and based upon the scope of those beans, stores those beans in JVM, specifically in a space inside JVM which is known as IOC container. After the creation of all the beans, automatically configures the dispatcher servlet and registers the default handler mappings, messageConverts, and all other basic things.
+
+Basically, spring boot supports three embedded servers:- Tomcat (default), Jetty and Undertow.
+
+run() internal flow :
+==========
+
+1. create application context
+2. check Application Type
+3. Register the annotated class beans with the context
+4. Creates an instance of TomcatEmbeddedServletContainer : and adds the context. Used to deploy our jar automatically.
+
+open SpringApplication.class :
+===============
+
+And find here run(String… args) method inside this method you will see the method createApplicationContext() so first it will create application context and inside createApplicationContext() method it will check application type it is SERVLET type Or REACTIVE or DEFAULT context type based on this it will return context.
+
+Now in DEFAULT_CONTEXT_CLASS you will see the class AnnotationConfigApplicationContext.class
+
+public AnnotationConfigApplicationContext(Class… annotatedClasses) {
+this();
+register(annotatedClasses);
+refresh();
+}
+
+open this class its constructor is used to Register the annotated class beans with the context.
+
+The classes which are annotated with @Component, @Service, @Configuration etc. will be register to the context.
+
+And in the finally run(-) method auto deploy the jar/war to server.
+
+@SpringBootApplication is a convenience annotation that adds all of the following:
+
+@Configuration: Tags the class as a source of bean definitions for the application context.
+@EnableAutoConfiguration: Tells Spring Boot to start adding beans based on classpath settings, other beans, and various property settings. For example, if spring-webmvc is on the classpath, this annotation flags the application as a web application and activates key behaviors, such as setting up a DispatcherServlet.
+@ComponentScan: Tells Spring to look for other components, configurations, and services in the com/example package, letting it find the controllers.
+It is the main class that we need to define to make our spring boot application.
+
+@SpringBootApplication
+public class Application {
+public static void main(String[] args) {
+SpringApplication.run(Application.class, args);
+}
+}
+
+If we will open @SprinBootApplication Annotation here you will see it contains :
+
+@SpringBootConfiguration
+@EnableAutoConfiguration
+@ComponentScan(excludeFilters = {
+@Filter(type = FilterType.CUSTOM, classes = TypeExcludeFilter.class),
+@Filter(type = FilterType.CUSTOM, classes = AutoConfigurationExcludeFilter.class) })
+public @interface SpringBootApplication {
+// code here…..
+}
+
+
+
+Spring Boot Application Internal Working.
+Spring does not generate any code automatically and not using any xml configuration file . so spring uses internally pragmatically configuration done by spring boot developer that are provided by jar.
+we are using just pre-configured jar . and those jar available in:
+
+META-INF/spring.factories
+
+Enable
+Disable
+
+To Enable preconfigured jars we just need to define dependency in pom.xml file.
+
+‘<’dependency’>’
+‘<’groupId’>’org.springframework.boot’<’/groupId’>’
+‘<’artifactId’>’spring-boot-starter-data-jpa’<’/artifactId’>’
+‘<’/dependency’>’
+
+This dependency will load all the jars related to JPA repository and stored into spring.factories.
+you can go to maven dependencies then click and open spring-boot-autoconfigure jar in the last you will see META-INF folder inside this spring.factories here you will find your jar org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration.
+
+Based on @Conditional and @Configuration :
+
+@Configuration(proxyBeanMethods = false)
+@ConditionalOnBean(DataSource.class)
+@ConditionalOnClass(JpaRepository.class)
+@ConditionalOnMissingBean({ JpaRepositoryFactoryBean.class, JpaRepositoryConfigExtension.class })
+@ConditionalOnProperty(prefix = “spring.data.jpa.repositories”, name = “enabled”, havingValue = “true”,
+matchIfMissing = true)
+@Import(JpaRepositoriesRegistrar.class)
+@AutoConfigureAfter({ HibernateJpaAutoConfiguration.class, TaskExecutionAutoConfiguration.class })
+public class JpaRepositoriesAutoConfiguration {
+
+}
+
+@ConditionalOnBean(DataSource.class) :
+— — — — — — — — — — — — — — —
+It will serach for the DataSource bean if it is available then only it will enable JpaRepositoriesAutoConfiguration . So this we need to define DataSource related properties into our property file.
+
+@ConditionalOnClass(JpaRepository.class) :
+— — — — — — — — — — — — — — —
+It will serach for the JpaRepository class if it is available then only it will enable JpaRepositoriesAutoConfiguration .
+
+like this :
+@ConditionalOnMissingBean({ JpaRepositoryFactoryBean.class, JpaRepositoryConfigExtension.class })
+@ConditionalOnProperty(prefix = “spring.data.jpa.repositories”, name = “enabled”, havingValue = “true”, matchIfMissing = true)
+
+If all conditions are true then only it will enable JpaRepositoriesAutoConfiguration class.
+
+The mainly Conditions checked by spring boot :
+
+ 
+
+If all the conditions are satisfied then only spring will enable to the component.
+
+@SpringBootApplication is the main annotation that we used on our main method and this annotation is the combination of these three annotations :
+
+ 
+
+High Level Flow Of Spring Boot And How run Method works :
+================================
+
+From the run method, the main application context is kicked off which in turn searches for the classes annotated with @Configuration, initializes all the declared beans in those configuration classes, and based upon the scope of those beans, stores those beans in JVM, specifically in a space inside JVM which is known as IOC container. After the creation of all the beans, automatically configures the dispatcher servlet and registers the default handler mappings, messageConverts, and all other basic things.
+
+Basically, spring boot supports three embedded servers:- Tomcat (default), Jetty and Undertow.
+
+run() internal flow :
+==========
+
+1. create application context
+2. check Application Type
+3. Register the annotated class beans with the context
+4. Creates an instance of TomcatEmbeddedServletContainer : and adds the context. Used to deploy our jar automatically.
+
+open SpringApplication.class :
+===============
+
+And find here run(String… args) method inside this method you will see the method createApplicationContext() so first it will create application context and inside createApplicationContext() method it will check application type it is SERVLET type Or REACTIVE or DEFAULT context type based on this it will return context.
+
+Now in DEFAULT_CONTEXT_CLASS you will see the class AnnotationConfigApplicationContext.class
+
+public AnnotationConfigApplicationContext(Class… annotatedClasses) {
+this();
+register(annotatedClasses);
+refresh();
+}
+
+open this class its constructor is used to Register the annotated class beans with the context.
+
+The classes which are annotated with @Component, @Service, @Configuration etc. will be register to the context.
+
+And in the finally run(-) method auto deploy the jar/war to server.
+
+@SpringBootApplication is a convenience annotation that adds all of the following:
+
+@Configuration: Tags the class as a source of bean definitions for the application context.
+@EnableAutoConfiguration: Tells Spring Boot to start adding beans based on classpath settings, other beans, and various property settings. For example, if spring-webmvc is on the classpath, this annotation flags the application as a web application and activates key behaviors, such as setting up a DispatcherServlet.
+@ComponentScan: Tells Spring to look for other components, configurations, and services in the com/example package, letting it find the controllers.
+It is the main class that we need to define to make our spring boot application.
+
+@SpringBootApplication
+public class Application {
+public static void main(String[] args) {
+SpringApplication.run(Application.class, args);
+}
+}
+
+If we will open @SprinBootApplication Annotation here you will see it contains :
+
+@SpringBootConfiguration
+@EnableAutoConfiguration
+@ComponentScan(excludeFilters = {
+@Filter(type = FilterType.CUSTOM, classes = TypeExcludeFilter.class),
+@Filter(type = FilterType.CUSTOM, classes = AutoConfigurationExcludeFilter.class) })
+public @interface SpringBootApplication {
+// code here…..
+}
+
+
+

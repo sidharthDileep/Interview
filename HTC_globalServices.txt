@@ -1,0 +1,8 @@
+HTC global services
+--------------------
+
+GIT?
+DevOPs steps?
+compiling and linking?
+ORM?
+invoke SP in hibernate?

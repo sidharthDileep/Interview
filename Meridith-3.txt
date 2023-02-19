@@ -1,0 +1,38 @@
+Meridith-Synapse
+-------------------
+99th
+-----
+
+why hire you as software developer? what makes you unique from other developers?
+I am hardworking. I use up all the ways and resources in my hand to get a solution.
+
+if I am stuck at anywhere, I search in google or I will ask my colleagues for help without taking their much time.
+learning?
+Recently, I've been working on getting AWS certificate and I got that. also, I've been learning some front end skills(Angular) and I need to start Spring reactive programming.
+
+anytime did ur learnings applied in your work?
+my AWS learnings helped in my previous project.
+
+does the team approved your suggestions for work?
+I didn't get any such chance to give suggestions, I used to give comments on peer reviews.
+
+what all things to look while code review?
+String usage, null check, exception hierarchy, function modularity, comments if needed.
+
+what will u do if any of ur teammates is underproductive?
+firstly, I will give friendly advice during any casual talks. if it is not going anywhere after that, I will escalate to higher management.
+Or in the team meeting I will point out it.
+
+how was the corona time?
+during the COVID, I worked up on my physical fitness more indeed. I build a routine for each day. also, I got to have more time to upskill myself.
+
+how do you approach challenging requirements?
+I love to work on challenging things within a team. I believe, if all the teammates in a group are honestly trying, anything can be achieved.
+
+what will u do if you are given more work?
+I dont have a problem if I am given more work compared to other teammates, untill it doesn't bother my work-life balance.
+And also at my current age, I believe I need to do more work. because as I am doing more and more, things which I felt were difficult turned to very easy ones.
+
+what was the last work u faced challenges and how did you overcome?
+last work, which I faced some difficulty was when I couldn't clear the code coverage in sonarqube. there was one void method which was not covered in unit tests. 
+I was able to do that with some google search.

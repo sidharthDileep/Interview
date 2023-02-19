@@ -1,0 +1,30 @@
+Onus Software Works
+--------------------
+
+@WebMVCTest
+distributed transactions
+Immutability
+JPA over JDBC
+synchronization
+Armstrong
+clientside and serverside
+logging
+query 2 similar table to get common records
+EC2 instances
+CloudFormation
+
+-------------------------------------------------------------
+1. INTERSECT
+SELECT emp_id , Name FROM employee1 E1
+INTERSECT
+SELECT emp_id , Name from employee2 E2
+
+Note : To use intersect , columns in both the table should be same and written in same order.
+
+2. JOIN – Equi Join / Inner Join
+
+select E1.emp_id , E1.Name from Employee1 E1
+INNER JOIN employee1 E2 ON
+E1.emp_id = E2.emp_id
+INNER JOIN employee3 E3
+E2.emp_id = E3.emp_id

@@ -1,0 +1,8 @@
+IBS
+----
+79th
+------
+
+elastic search
+lazy loading but eager
+fuse framework benefits

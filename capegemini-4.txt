@@ -1,0 +1,11 @@
+CapGemini
+----------
+87th
+-----
+
+bean lifecycle
+spring modules
+Singleton
+heap and stack
+JVM architecture
+GC working

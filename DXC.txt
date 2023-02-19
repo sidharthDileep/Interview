@@ -1,0 +1,19 @@
+DXC
+-----
+60th
+-----
+
+app server and web server
+cicd pipeleine implementation
+where FI used?
+lambda exp good?
+staic block instance block constructor?
+only parameterized constructor?
+different packages methods -default precedence
+hashmap linkedhashmap treemap
+serialized - not
+struts, jsp
+sonarqube issues?
+jsp servlets?
+MDB?
+Bus and queue?

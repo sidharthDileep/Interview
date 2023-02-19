@@ -1,0 +1,14 @@
+PDD
+-----
+46th
+-----
+
+security
+exception
+how do we validate timeout in soap?
+repush to queue?
+index in DB?
+stored procedures and functions?
+memory leaks? how to see?
+lb and deployment?
+sonarqube?code quality?

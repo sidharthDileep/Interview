@@ -1,0 +1,31 @@
+
+55th
+-----
+
+nested class
+
+serialization
+
+use of cass
+
+composition
+upcaste primiitive used
+override static private
+string a + b
+immutable?
+arrays arraylist
+throw throws
+failsafe and failfast
+conditional - exclude
+war file
+bootstrap
+restful
+resorces thread
+path variable
+@Requestbody
+BDD
+
+
+
+
+

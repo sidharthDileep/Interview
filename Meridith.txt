@@ -1,0 +1,35 @@
+Meredith
+-----------
+78th
+-----
+
+
+
+static interface in heap
+closure
+
+from Sugata Gupta to everyone:    2:25 PM
+int x = 10
+System.out.println((float)x)
+System.out.println((double)x)
+int y = ^x
+int y x >>> 1
+int y = x >>> 1
+
+class Source {
+Arraylist a = new ArrayList([1,2,3])
+}
+new Source().clone()
+
+wat and notify not in THread class
+
+externalizable interface to writeObject
+
+why seraialUUID
+custom annotation
+JWT token
+scalability
+beancontextaware
+constructor and setter injection used?
+shallow and deep copy
+can we make oauth token to be used only once?

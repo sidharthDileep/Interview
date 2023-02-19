@@ -1,0 +1,62 @@
+Way.com
+---------
+
+
+
+Class Singleton{
+
+private static Singleton volatile obj = null;
+
+private Singleton(){
+}
+
+public static Singleton getInstance(){
+
+
+
+if(obj == null){
+
+Synchronized(Singleton.class){
+
+if(obj == null){
+
+obj = new Singleton();
+}
+
+}
+}
+return obj;
+
+}
+
+}
+
+
+Class Loading
+
+StackOverflow 
+
+OutOfMemory
+
+why we have wait notify and notifyall in Object method instead of Thread class
+
+Volatile and Atomic
+
+instanceOf operator
+
+static and dynamic class loading
+
+Exception hierarchy
+
+sonarQube issues
+
+requestParam and PathVariable
+
+how validation in done in sprin boot
+
+return in try block, so finally run?
+
+Reflection?
+
+static and dynamic class loading?
+

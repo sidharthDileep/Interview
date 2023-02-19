@@ -1,0 +1,57 @@
+IBS
+-----
+
+1-Suppose Single Linked List, Find the middle element without using inbuilt function?
+2-You have an integer array like - int arr[]={1,2,3,4............100}; 1 element is duplicate. find that duplicate value?
+3-List of employee, find maximum age of employee using Java 8 features.
+4-Suppose a Student table has two columns,Name and Marks.How to get names and marks of the top three students.
+
+diff btw procedures and functions?
+DDL and DML?
+how do we implement second level cache?
+volatile & transient
+
+
+
+1-Suppose Single Linked List, Find the middle element without using inbuilt function?
+2-You have an integer array like - int arr[]={1,2,3,4............100}; 1 element is duplicate. find that duplicate value?
+3-List of employee, find maximum age of employee using Java 8 features.
+4-Suppose a Student table has two columns,Name and Marks.How to get names and marks of the top three students.
+
+LinkedList<Integer> list = new LinkedList<>();
+Node temp = new Node();
+temp = list.head;
+temp2 = list.head;
+int n = 0;
+while(temp != null){
+temp = temp.next;
+n = n+1;
+}
+int mid = n/2+1;
+
+while(mid > 0){
+temp2 = temp2.next;
+mid--;
+}
+
+//////////////////////////////
+Arrays.sort(arr);
+for(int i=0; i<arr.length-1; i++){
+if(arr[i]==arr[i+1]){
+System.out.println(arr[i]);
+break;
+}
+}
+
+/////////////////////////////////
+employee.stream()
+        .sorted((e1, e2) -> e2.getAge()-e1.getAge()).findFirst().get();
+        
+/////////////////////////////////
+
+SELECT name, marks from Student order by marks limit 3;
+
+/////////////////////////////////
+
+
+

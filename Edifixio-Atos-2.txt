@@ -1,0 +1,42 @@
+EDIFIXIO - 2
+------------
+68th
+-----
+
+boolean ans = false;
+Scanner sc = new Scanner(System.in);
+
+int n;
+
+int random = Random(value);
+
+while(ans != true){
+
+System.out.println("Guess the number!!");
+
+n = sc.nextInt();
+
+if(n == random){
+System.out.println("Won!!!");
+ans = true;
+
+}
+
+}
+
+final
+foreign key
+
+
+
+
+
+
+
+
+
+
+
+SELECT b.name from Book b JOIN Library l ON b.libraryid = l.id where b.author = "Cohelo" AND l.name = "EDIFIXIO";
+
+SELECT SUM(b.price) from Book b where b.author = "Cohelo" and b.price > 90;

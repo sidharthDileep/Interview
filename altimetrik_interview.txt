@@ -1,0 +1,92 @@
+String s = "aababbbccd";
+
+
+expected output: 2a1b1a3b2c1d
+
+char ch = s[0];
+int count =0;
+String out = "";
+
+for(int i=0; i<s.length(); i++){
+	
+	if(ch == s[i]){
+		
+		count++;
+	} else if (i == s.length - 1){
+	
+		out = out + count + ch;
+		ch = s[i];
+		count = 1;
+		out = out + count + ch;
+		
+	}else {
+	
+	
+	out = out + count + ch;
+	ch = s[i];
+	count = 1;
+	
+	}
+	
+}
+
+interface a {
+
+default void print(){
+
+	sop("a");
+}
+
+}
+
+interface b {
+
+default void print(){
+
+	sop("b");
+}
+
+}
+
+class c implements a, b {
+
+	public void test(){
+	
+		
+	
+	}
+	
+	@Override
+	void print(){
+		
+		a.super.print();
+	
+	}
+
+}
+
+list of strings - names
+	
+	
+List<String> list = new ArrayList["Sidharth", "Akash"
+
+
+
+List<String> unique = list.stream()
+						  .distinct()
+						  .collect(Collectors.toList());
+						  
+						  
+sum of only odd numbers
+
+list.stream()
+	.filter( i -> {i % 2 != 0} )
+	.sum();
+	
+
+exception handling?
+multiple datasource and autowiring?
+IAM cloud?
+spring security?
+
+	

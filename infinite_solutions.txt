@@ -1,0 +1,25 @@
+Infinite
+===========
+
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		List<Employee> employees = new ArrayList<>();
+		employees.add(new Employee(1, "Sidharth"));
+		employees.add(new EMployee(2, "Dileep"));
+		employees.stream()
+		        .sorted(Comparator.ComparingInt(Employee::getId)).forEach(System.out::println);
+	}
+}
+
+class Employee{
+    int id;
+    int name;
+}
+
+
+SELECT salary from Employee e ORDER BY salary DESC limit 1, 1;

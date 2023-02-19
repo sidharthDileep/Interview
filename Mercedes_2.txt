@@ -1,0 +1,134 @@
+Mercedes Benz
+--------------
+67th
+------
+
+
+find the sum of twice of odd integers which are in int array using lambda and streams in single line and implement the below findSum method.
+e.g if we pass int[]{3, 4, 9, 6, 7} in below findSum method then it will return 38 as we have 3, 9 and 7 are odd integers and double of them are 3 * 2 =6, 9 * 2 = 18 and 7 * 2= 14 and sum of 6, 18 and 14 is 38
+
+int findSum(int[] arr){
+
+List<Integer> list = Arrays.asList(arr);
+
+int Sum = list.stream().filter(n -> n%2 != 0).map(a -> 2*a).sum();
+
+System.out.println(Sum);
+
+}
+
+Employee (ID, empname, salary, ManagerID), Query: find all employees name and their manager name who are having salary more than "Vishwas" salary
+
+Employee (ID, empname, salary, ManagerID), 
+Query: find all employees name and their manager name who are having salary more than "Vishwas" salary.
+
+SELECT e.name, m.name FROM  Employee e JOIN Manager m ON e.ManagerID = m.ID;.
+
+springboot application API End point:
+
+1)
+Request: GET /createddate/fname?sirname=lname,
+Response:{"name: "fname lname", "currentdate":07/5/2021}
+for example, GET /createddate/ajay?sirname=devgan, Resp:{"name: "Ajay Devgan", "currentdate":07/5/2021}
+
+Note:
+a)name and fname are dynamic
+b)we don't need to connect to database
+
+2)
+Request: POST/createddate
+Request Body
+{
+"currentdate":07/5/2021,
+"fname":"Ajay:,
+"lname":"Devgan"
+}
+Response:
+status code 201
+
+table:User
+user id | fname | lname | createddate
+
+
+
+
+@RestController
+class Controller{
+
+UserDetails userDeails;
+
+UserRepository userRepository;
+
+User user;
+
+@GetMapping(value = "/createddate/, produces = "application/json")
+public ResponseEntity<UserDetails> getDetails(@PathParam fname,
+									  @QueryParam lname){
+	
+	userDetails.getResponse(
+	
+	
+	return ResponseEntity<UserDetails> 
+
+}
+
+@PostMapping(value = "/createddate")
+public ResponseEntity<> postDetails(@RequestBody request){
+
+UserReq userReq = 
+user.setCurrentDate(re
+
+
+
+return ResponseEntity<>(HTTP.Created);
+
+}
+
+
+
+
+}
+
+-----------------------------------------
+void star(int n){
+//provide code here
+}
+
+99 >= n >= 2
+
+for n=4:
+
+123*
+45**
+6***
+****
+
+for n=3:
+
+12*
+3**
+***
+
+
+void star(int n){
+
+for(int i=0; i<n; i++){
+	
+	for(int j=0; j<n-1; j++){
+		
+		System.out.print(j);
+
+	}
+	
+	for(int k=i; k<=i; k++){
+	
+	System.out.print("*");
+	
+	}
+	
+	System.out.println("\n");
+
+}
+
+
+}

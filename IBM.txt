@@ -1,0 +1,83 @@
+44th
+
+IBM
+----
+
+
+void m1(int i)
+test t1 = new test();
+t1.m1(10);
+t1.m1(10.5);
+m1(String s)
+Test t1 = new Test();
+t1.m1("test");
+t1.m1(null);
+
+clone
+singleton
+nsertion orered
+null value
+
+unsorted.stream().
+
+
+List<Integer> unsorted = Arrays.asList(11, 2, 5, 3, 2, 55, 32, 34);
+Collections.sort(unsorted);
+unsorted.stream().map(Comparator.comparingInt).collect(Collectors.toList());
+List<Person> employees = new ArrayList<>();
+employees.add(new Person("Shiddart", 23)); 
+employees.add(new Person("Shiddart", 33)); 
+employees.add(new Person("Souvik", 29));
+employees.add(new Person("Manoj", 30));
+
+manoj,shidart 23,shii 33,sou 29
+employees.stream().map(NameComparator).thenComparing(AgeComparator);
+employees.sort(Comparator.comparing(Employee::getName)
+                         .thenComparing(Employees::getAge));
+						 
+						 
+thread.start();
+
+exceptions
+
+springbootapplication
+exclude(
+@RestComtroller
+lazy
+pagination in db
+pagination in rest
+actuator
+DI
+how deployment
+sonarqube
+junits
+start and run method?
+
+what is the difference between the start and run method? Main difference is that when program calls start() method a new Thread is created and code inside run() method is executed in new Thread while if you call run() method directly no new Thread is created and code inside run() will execute on current Thread
+how do we mock a service in junits?
+
+
+
+class Multi extends Thread{  
+public void run(){  
+System.out.println("thread is running...");  
+}  
+public static void main(String args[]){  
+Multi t1=new Multi();  
+t1.start();  
+ }  
+}  
+
+class Multi3 implements Runnable{  
+public void run(){  
+System.out.println("thread is running...");  
+}  
+  
+public static void main(String args[]){  
+Multi3 m1=new Multi3();  
+Thread t1 =new Thread(m1);   // Using the constructor Thread(Runnable r)  
+t1.start();  
+ }  
+}  
+
+

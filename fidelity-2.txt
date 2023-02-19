@@ -1,0 +1,19 @@
+Fidelity-2
+-----------
+100th
+------
+
+
+Microservices? advantages?
+why monolith to microservices?
+should monolith still be used?
+log4j issue?
+spring security issue?
+autoscaling?
+load balancer?
+docker? containarization?
+event-driven architecture?
+design patterns?
+facade? modertor?
+new Java feature 9?
+proxy pattern?

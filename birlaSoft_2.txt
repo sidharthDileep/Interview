@@ -1,0 +1,68 @@
+Birlasoft-2
+------------
+80th
+-----
+
+Set<Employee> emp = new TreeSet<>();
+
+class Employee implements Comparable{
+
+public void compare(Employee e1){
+
+return age.compare(e1.getAge());
+
+}
+
+
+}
+
+Collections.sort(emp);
+
+
+list.stream().filter( a-> a.getAge()>25)
+			 .map(s -> s*2)
+			 .collect(Collectors.toList());
+			 
+			 
+Employee emp = new Employee(1, 25, "Person");
+Optional<Employee> empOptional = emp;
+
+System.out.println(empOptional.get());
+
+
+custom jpa
+findByfirstNameAndzipCode(String name, int zipCode){
+	
+}
+
+@ManyToMany
+@JoinColomn(mappedBy, cascading)
+
+
+
+@Colomn
+
+
+Mockito.when().then();
+
+api/v1/m1
+
+POST/api/v1/m2
+
+
+Response Code:
+
+
+Http
+Asynchronous Queue
+
+config-server
+
+application-dev.yml
+
+
+
+Synchronized and Concurrent
+can we have duplicate values in Map
+hashcode and equals
+api-gateway

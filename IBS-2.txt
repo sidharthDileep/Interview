@@ -1,0 +1,30 @@
+IBS-2
+------
+82nd
+------
+
+
+List<Integer> list = new ArrayList<>();
+
+for(int i=2; i<100; i++){
+list.add(i);
+}
+
+list.stream().forEach( a -> { int j=2;
+							  boolean flag = false;
+							  for(int j=0; j<
+							  if(a%j ==0){
+							  flag = true;
+							  }
+							  if(!flag){
+							  System.out.println(
+							  
+							  }
+						
+collect(Collectors.toList());
+
+architecture where we want to fetch 1 million records from database
+kibana datacloak
+kotlin
+
+functional programming?

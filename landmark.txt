@@ -1,0 +1,129 @@
+Landmark
+---------
+103rd
+------
+
+Length of LinkedList
+
+LinkedList<Integer> list = new LinkedList<>(1, 2, 3, 4, 5);
+
+for(Node i: list){
+
+count++;
+
+}
+
+List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+
+Iterator<Integer> it = list.itertor();
+
+it.hasNext(){
+
+}
+Performnce
+copyOnWriteArrayList
+concurrentArrayList read and write
+
+
+
+List<Integer> new = list.stream()
+						.filter(e -> e>3)
+						.collect(Collectors.toList());
+						
+class Employee{
+
+int id;
+String name;
+
+public Employee(int id, String name){
+this.id = id;
+this.name = name;
+}
+
+public int hashCode
+
+}
+
+class Test{
+
+Employee e1 = new Employee(1, "Mahesh);
+Employee e2 = new Employee(2, "Suresh);
+Employee e3 = new Employee(1, "Mahesh");
+
+Set<Employee> set = new HashSet<>();
+
+set.add(e1);
+set.add(e2);
+set.add(e3);
+
+
+}
+
+class Controller{
+
+
+@GerMapping(value = "/employees/{id}")
+public <ResponseEntity> Employee getEmployee(@PathParameter para){
+
+
+
+}
+
+
+}
+
+@Repository
+
+@Service
+
+@Entity
+@Table(name = "employee")
+class Employee{
+
+@Id
+@Generated
+@Column
+@Getter
+@Setter
+int id;
+
+@Column
+@Getter
+@Setter
+String name;
+
+float salary
+
+
+
+}
+
+indexing
+
+int[] arr = new int[]{0, 1, 0, 1, 1, 0, 1, 0, 0};
+
+for(int i=0; i<arr.length; i++){
+
+if(arr[i] == 0){
+count++;
+}
+	
+}
+
+int[] newArray = new int[arr.length];
+
+for(int i=0; i<count; i++){
+
+newArray[i] = 0;
+	
+}
+
+for(int i=count; i<newArray.length; i++){
+
+newArray[i] = 1;
+	
+}
+
+
+
+

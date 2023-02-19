@@ -1,0 +1,14 @@
+Sapiens - L2
+--------------
+57th
+-----
+
+spring xml config in spring booot?
+
+Use @ImportResource to Import XML Configuration
+
+what all things to change for db change
+transaction management
+eager and
+mvc
+spring security

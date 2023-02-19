@@ -1,0 +1,23 @@
+Morgan Stanley - 2
+====================
+
+e1 and e2 are 2 employee instances
+e1  -> t1, t2
+e2  -> thread1, thread2
+
+In the above cases, how does the locking happens?
+
+public synchronized method(){
+
+}
+
+
+ThreadPool pool
+
+How do u expedite a data transfer between two DBs? how to parellilize?
+
+how to make a mutable key suitable for hashmap? does treeMap also need immutable keys?
+what should be the optimal thread count in a threadPool?
+find the maximum element in a semi-sorted array?
+CMS and G1 GC
+Exception handling?

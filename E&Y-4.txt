@@ -1,0 +1,88 @@
+E&Y
+---------
+110th
+------
+
+find minimum platforms where
+
+noOfTrains=6
+
+arrivalTimes = {0800, 0840, 0950, 1100, 1300, 1800}
+
+deptTimes = {0910, 1200, 1120, 1130, 1900, 2000}
+
+Write a prgm given arrival and dept, we need minimum platforms for allocation?
+
+
+Map<Integer, Integer> times = new HashMap<>();
+
+times.put(0800, 0910);
+
+....
+
+int arrivalTime; 
+int deptTime;
+
+Iterator<Integer> it = times.iterator;
+int key;
+int platforms;
+
+while(it.hasNext()){
+key = it.next();
+
+int latestDep = it.get(key);
+
+if(it.get(key) < latestDep){
+platforms++;
+}
+
+for(int i=0; i<arrivaltimes.size(); i++){
+
+
+
+
+
+
+}
+
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		
+		int noOfTrains=6;
+
+        [] arrivalTimes = {0800, 0840, 0950, 1100, 1300, 1800};
+
+        double[] deptTimes = {0910, 1200, 1120, 1130, 1900, 2000};
+		
+		int platforms = 0;
+		for(int i=0; i<arrivaltimes.size(); i++){
+		    for(int j=0; j<i; j++){
+		        while(platforms > 0){
+		            
+		            if(deptimes[j] > arrivaltimes[i]){
+		            platforms++;
+		        }
+		        
+		        if(deptimes[j] < arrivaltimes[i]){
+		            platforms--;
+		        }
+		            
+		        }
+		        
+		        
+		        
+		    }
+		    
+		    
+		}
+		    
+		
+	}
+}
+
+
+

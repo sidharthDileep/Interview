@@ -1,0 +1,37 @@
+Xoriant
+-------
+62nd
+------
+select employee depaertment
+
+---  SELECT e.employee_id 'Emp_Id', e.last_name 'Employee', 
+m.employee_id 'Mgr_Id', m.last_name 'Manager' 
+FROM employees e 
+join employees m 
+ON (e.manager_id = m.employee_id);
+
+
+public boolean isPalindrom(String inputString){
+
+StringBuffer reverse ="";
+char ch;
+
+for(int i=inputString.length() - 1; i>=0; i++){
+
+ch = inputString.charAt(i);
+reverse.append(ch);
+
+}
+
+}
+
+if(inputString.equals(reverse)){
+
+return true;
+
+}
+
+return false;
+
+
+}

@@ -1,0 +1,71 @@
+Capgemini
+---------
+48th
+-----
+
+	m(int i)
+    m(float f)
+    m('a')
+    m(String st)
+    m(object o)
+    m(null)
+    ?
+    m(Stringbuffer sb)
+    m(null)
+thread
+states
+syncr
+2 threads
+join yield
+wait outsode
+jvm
+memory
+loader
+serialization
+enumeration
+iterator
+concurrent hashmap
+
+class final immmutable{
+
+private int id;
+private String name;
+
+public constructor(int id, String name){
+this.id = id;
+this.name = name;
+
+}
+
+public getId(int id){
+return id;
+}
+
+public getName(String name){
+return name;
+}
+
+
+}
+
+class Singleton{
+
+private Singleton singleton;
+
+private singleton(){
+	
+}
+
+public static getInstance(){
+	if(singleton == null){
+		singleton =  new Singleton();
+	}
+	
+	return singleton;
+
+}
+
+
+}
+
+

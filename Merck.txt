@@ -1,0 +1,18 @@
+Merck
+------
+
+
+architecture if we have 50 fields from frontend
+
+@RestController
+class EmployeeController{
+
+@PostMapping("\employees\{id})
+public void employeeMethod(@RequestBody body,  @PathParameter ){
+
+
+
+}
+
+
+}

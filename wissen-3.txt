@@ -1,0 +1,9 @@
+Wissen
+---------
+105th
+-------
+
+what is collections in java?
+union and nionall
+indexing in DB
+why serialversionUUID used?

@@ -1,0 +1,14 @@
+UST-2
+
+45th
+----
+
+how JVM initialized
+concurrent hashMap
+arrayList & linkedList
+architrcting microsev
+discovery path
+synchronized
+singleton? how to synchronozw
+immutable
+functional interfaces

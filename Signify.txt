@@ -1,0 +1,176 @@
+64th
+-----
+Signify
+--------
+
+
+A K Q J 10 9 8 ..... 3 2 1
+
+A
+10
+
+
+Scanner sc = new Scanner(System.in);
+
+Map<Character, Integer> values = new HashMap<>();
+
+values.put('A', 14);
+values.put('K', 13);
+values.put('Q', 12);
+values.put('J', 11);
+values.put('10', 10);
+values.put('9', 9);
+
+int n = 5;
+while(n > 0){
+
+int playerOne = sc.next();
+int playerTwo = sc.next();
+
+switch(playerOne){
+
+case 'A' : playerOne = 14;
+		   break;
+		   
+case 'K' : playerOne = 13;
+		   break;
+
+
+
+}
+
+
+switch(playerTwo){
+
+case 'A' : playerOne = 14;
+		   break;
+		   
+case 'K' : playerOne = 13;
+		   break;
+		   
+
+
+
+
+}
+
+
+if(playerOne < playerTwo){
+
+System.out.println("Player Two Won");
+
+
+} else {
+
+System.out.println("Player One Won");
+
+}
+
+}
+
+
+Array of numbers : sum of 2 numbers from array  = 10
+
+{1,2,3 ...,10}
+
+int[] arr  = new int[n];
+
+for(int i=0; i<arr.length; i++){
+
+for(int j=i+1; j<arr.length; j++){
+
+if(i + j == 10){
+
+System.out.println(i + " " + j);
+
+}
+
+}
+
+}
+
+
+for(int i=0; i<arr.length; i++){
+
+j = i+1;
+
+if(i + j <= 10){
+
+if(i + j == 10){
+
+System.out.println(i + " " + j);
+} else {
+
+
+
+}
+
+} 
+
+}
+
+}
+
+final class Immutable{
+
+private final int id;
+
+private final String name;
+
+private final HashMap<String, String> testMap;
+
+private ArrayList<Integer> list;
+
+public int getId(){
+return id;
+}
+
+public String getName(){
+return name;
+}
+
+public HashMap<String, String> getTestMap(){
+return (HashMap<String, String>) testMap.clone();
+}
+
+public ArrayList<Integer> getList(){
+return list;
+}
+
+Immutable(int id, String name, HashMap<String, String> hmap, ArrayList<Integer> hlist){
+
+this.id = id;
+name = this.name;
+Map<String, String> tempMap = new HashMap<>();
+
+Iterator<String> it = hmap.keyset().iterator();
+while(it.hasNext()){
+String key = it.next();
+tempMap.put(key, hmap.get(key));
+}
+this.testMap = tempMap;
+
+
+
+
+}
+
+}
+
+@RestController
+class controller{
+
+@GetMapping( value = "\", produces = "application/json")
+ResponseEntity<ApiResponse> getResponse( @PathParameter requestFieldOne)
+
+
+@PostMapping( value = "\", produces = "application/json")
+ResponseEntity<ApiResponse> getResponse( @RequestBody requestFieldOne)
+
+
+
+
+
+
+}
+

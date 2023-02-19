@@ -1,0 +1,17 @@
+create a custom functional interface?
+how will u convert list to map?
+advantages of factory pattern?
+what happens if hashcode and equals methods are not properly implementes?
+how to avoid new operation in a singleton pattern?
+new dat/time api? diff of dated?
+exclusion of specifc config in enableAutoConfig?
+how to make sure transactions are rolled back if any issues?any exceptions in transactions?
+restTemplate? how to handle exceptions from external service? 
+how to pass parameters to uri of an external call? or request body?
+path parameters? how to set?
+volatile?
+Executor framework?
+concurrent hashmap working?
+Multithreading?
+spring aop?
+spring security?

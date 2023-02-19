@@ -1,0 +1,28 @@
+Modivcare
+-------------
+9th
+---
+
+Oauth?
+can we autowire a bean in another package?
+strategy other than @Qualifier
+composite primarykey?
+@Responsebody? what if we dont give?
+
+
+int[] num = { };
+int req = 0;
+
+for(int i=0; i<num.length; i++){
+
+if(num[i] == n){
+
+req = i;
+}else if(num[i] < n){
+req = i;
+}
+
+}
+
+
+

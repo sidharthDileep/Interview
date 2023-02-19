@@ -1,0 +1,53 @@
+NEC-2
+------
+107th
+------
+
+how to get ip address of endpoint in a rest service?
+POM?
+why sonarlint used?
+how jenkins works with kubernetes?
+how to convert xml to json?
+jaxb?
+message broker?
+beanfactory?
+connection pooling?
+Rest architecture principles?
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt(); //95
+		
+		int rows = n-4/10; // 9
+		
+		int rem = n-4%10; //1
+		
+		int k = 1;
+		
+		for(int i=0; i<rows; i++){
+		    while(k<n+1){
+		        
+		        for(int j=1; j<=10; j++){
+		            if(i==0 && k==4 || k==95){
+		                System.out.print(k + " ");
+		                k++;
+		                break;
+		            }
+		        System.out.print(k + " ");
+		        k++;
+		        
+		    }
+		    
+		    System.out.println();
+		    }
+		}
+		
+	}
+}
+

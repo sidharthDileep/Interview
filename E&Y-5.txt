@@ -1,0 +1,56 @@
+E&Y - 5
+--------
+111th
+------
+
+externalizable
+bean scopes
+singleton bean and singleton class
+put and patch
+get and post
+what will happen if we use of get for creating
+level of cache in hibernate
+autoclosable interface
+try with resource
+Completable future
+fault tolerance? circuit breaker?
+jpa method to get a single field?
+
+
+int[] arr = {1 ,2 ,3 ,4 };
+
+int n = arr.length-1;
+int k = arr.length-1;
+for(int i=0; i<=n; k<n/2; i++){
+
+int b = arr[i];
+arr[i] = arr[k];
+arr[k] = b;
+k--;
+
+}
+int n;
+
+List<Integer> list = Arrays.asList(arr);
+List<Integer> sortedList = list.stream().sorted().collect(Collectors.toList());
+
+for(int i=0; i<sortedList.size(); i++){
+
+if(arr[i]+1 == arr[i+1]){
+	continue;
+	} else {
+	n = arr[i+1];
+	break;
+	}
+
+}
+
+Date date;
+
+Student student = 	students.stream()
+							.compare(Student::getDateOfBirth)
+							.thenComparing(Date::getYear)
+							.thenComparing(Date::getMonth)
+							.thenComparing(Date::getDay)
+							.findFirst();
+							

@@ -1,0 +1,8 @@
+QuinBay - 1
+---------------
+design - Scenario - we need to get top ten students whenever we get calls from UI(20/30 calls per sec)
+performance optimization of DB - how to reduce the DB calls?
+how to optimize query? how to find the root cause when query is taking a lot of time?
+hashmap - least unique, mostly unique, moderately unique?
+indexing? different types? conditional index?
+asynchronous - why we use? how to scale?

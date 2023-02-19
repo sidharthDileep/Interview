@@ -1,0 +1,55 @@
+NT (Cash)
+--------------
+1) About the previous project and tech stack used there.
+2) Microservices componenets
+3) Microservices design Patterns
+4) Service Discovery
+5) Gateway? which one is used?
+6) diff btw yml and properties file? will the server starts if we are having only yml file?
+7) why config server is used? advantages of using it?
+8) How are external jars incorporated while deploying microservices?
+9) Agile methodologies?
+10) Security used in the project? how Oauth token is generated?
+11) Code quality tools used in the project?
+12) Logging framework used? How will you look up logs in microservices directly from AWS?
+13) Diff btw hashtable & concurrenthashmap?
+14) Java design patterns? Singleton?
+15) How many ways we can break singleton pattern?
+16) without properties file will the server starts?
+
+-------------------------------
+
+
+Inside CourseMaterial class - owning side - foreign key held
+---------------------------------------------
+@OneToOne(optional = false)
+@JoinColumn(name = "COURSE_ID", referencedColumnName = "ID")
+private Course course;
+
+Inside Course class
+---------------------
+@OneToOne(mappedBy = "course")
+private CourseMaterial material;
+
+
+
+
+
+
+
+
+
+
+--------------------------------------
+
+Route
+Observable
+Subject
+
+
+----------------------
+AWS
+MultiThreading
+Java-new
+Data-structures
+Problem Solving

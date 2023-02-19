@@ -1,0 +1,16 @@
+Mercedes
+---------
+singleton class is thread-safe?
+helm chart
+substring memory leaaks
+turbine server
+BFS/BFS for graph
+fetch duplicate emplyee records from employeedetails without using PK
+
+SELECT OrderID, COUNT(OrderID)
+FROM Orders
+GROUP BY OrderID
+HAVING COUNT(OrderID) > 1
+
+one humdred doors problem
+sql injection

@@ -1,0 +1,44 @@
+E&Y - 2 -1
+-----
+108th
+-------
+
+
+stream of list of integers even and divisble by 3
+
+
+List<Integer> result = list.stream()
+						   .filter( e -> 
+						   e%2 == 0 && e%3 == 0
+						   ).collect(Collectors.toList());
+
+@Service
+service dao @Repository
+
+semantic monitoring
+
+HTTP Methods - idempotent - OPTIONS
+
+How to catch unchecked exceptions?
+
+how to mock repository save in Unit tests?
+
+What are starter dependencies?
+
+what happens to size when we remove elements from arrayList?
+
+int i = 5;
+long j = 3;
+
+i = i + (int)j;
+
+i+=j;
+
+
+print(i);
+
+
+map.keySet().stream()
+	.
+
+						   

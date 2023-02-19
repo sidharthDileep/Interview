@@ -1,0 +1,7 @@
+HappiestMinds
+--------------
+82nd
+------
+
+fail-safe and fail-fast
+list - thread safe?

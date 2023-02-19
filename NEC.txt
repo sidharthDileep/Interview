@@ -1,0 +1,47 @@
+NEC
+----
+104th
+------
+
+String str = "Sidharth";
+
+for(int i=0; i<str.length; i++){
+
+char ch
+
+}
+
+class Parent{
+
+private void show(){
+
+SO("Parent show");
+
+}
+
+}
+
+class Child extends Parent{
+
+public void show(){
+
+SO("Child show");
+
+}
+
+}
+
+Parent obj = new Child();
+obj.show();
+
+String s = "Sidharth";
+
+String s2 = s.concat("P");
+
+SidharthP
+
+@NativeQuery
+public EmployeeEntity getEmployeeEntity(){
+Query query = getEntityManager().createNativeQuery("SELECT salary FROM Employee e ORDER BY salary DESC limit 2, 1", EmployeeEntity.class);
+return (EmployeeEntity) query.getSingleResult();
+}

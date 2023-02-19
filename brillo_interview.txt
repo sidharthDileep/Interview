@@ -1,0 +1,19 @@
+List<String> fruits = Arrays.asList("apple", "banana", "pie", "pineapple", "apricots");
+
+fruits.stream()
+      .sorted(Comparator.comapring(fruits::get)
+              .thenComparing(String::length))
+      .limit(1)
+      .collect(Collectors.toList());
+      
+      
+      
+String str ="";
+int max = fruits.get(0);
+for(int i=1; i<fruits.size(); i++){
+   if(fruits.get(i).length > max){
+   max = fruits.get(i).length;
+   str = fruits.get(i);
+   }
+   }
+  System.out.println(str);

@@ -1,0 +1,194 @@
+class Test{
+
+psvm(){
+
+Integer i = new Integer(10);
+Integer j = new Integer(20);
+
+SOP(i + " " + j);  //10 20
+
+swap(i, j);
+
+SOP(i + " " + j); // 10 20
+
+
+}
+
+public static void swap(Integer i, Integer j){
+
+Integer c = new Integer(i);
+i = j;
+j = c;
+
+SOP(i + " " + j) // 20 10
+
+}
+
+}
+
+class P{
+
+m1(){
+
+SOP(Pm1);
+
+}
+
+}
+
+class C extends P{
+
+m1(){
+SOP(Cm1);
+}
+
+m2(){
+SOP(Cm2);
+}
+
+}
+
+class GC extends C{
+
+m2(){
+SOP(GCm2);
+}
+
+
+}
+
+P p = new GC();
+p.m1(); // Cm1
+p.m2();
+
+
+
+
+public class Car{
+Car(String name){
+
+SOP(In car class + name);
+
+}
+psv drive(){
+
+SOP(driving cars);
+
+}
+}
+
+public class BMW extends Car{
+
+BMW(){
+this("BMW");
+SOP(In bMW default constructor);
+}
+BMW(String name){
+super(name);
+SOP(In bMW parameterized constructor);
+}
+psv drive(){
+SOP(drving BMW);
+}
+psvm(){
+
+Car car = new BMW();
+car.drive();
+
+
+
+
+}
+
+
+}
+
+
+In car class BMW
+In bMW parameterized constructor
+In bMW default constructor
+drving cars
+
+
+
+reverse linked list in groups of size k
+
+213
+231
+321
+
+1 2 3 4 5 6 7 8,  k = 3
+3 2 1 6 5 4 8 7
+
+reverse(LinkedList list){
+
+LinkedList head = list;
+
+
+
+for(int i=0; i<n; i++){
+LinkedList prev = list;
+LinkedList next = list.next;
+
+list = list.next;
+
+
+}
+
+
+}
+
+
+Food
+ id,  name, unit, company_id
+
+ 1   cm     ecs   16
+ 6   ci     ecs  15
+ 2   bb     ecs  15
+ 3   mm     ecs 17
+ 4   pr    ecs  15
+ 5   jc   ecs   18
+ 7   ss   ecs   
+
+Company
+
+company_id company_name company_city
+18             OA        BT
+15             JH        LD
+16             AF        TL
+17             F          LD
+19             SMP        NY
+
+SELECT c.company_id, c.company_name, c.company_city, f.name FROM COMPANY c JOIN FOOD f ON c.company_id = f.company_id;
+
+18  OA BT jc
+19 SMP NY null
+
+
+class Employee{
+
+ID id;
+Address address;
+PhoneNumber phno;
+
+EMpl
+
+
+
+
+}
+
+
+  		  1
+		2   3
+	     45   67
+          89 1011 1213
+ 1 2 3 7 6 5 4 
+
+
+
+zigzag(
+
+
+
+

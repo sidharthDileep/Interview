@@ -1,0 +1,21 @@
+
+Ekkagatte
+----------
+66th
+----
+
+
+spring mvc
+spring data
+annotations
+spring initializeer
+actuator
+methods
+exception
+inheritance
+having subclasses
+classpath
+jdk jvm jre
+string buffer
+array
+arraylist

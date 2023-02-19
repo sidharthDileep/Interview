@@ -1,0 +1,10 @@
+SLK
+-------
+102nd
+------
+
+data hiding
+how to test static methods in junits
+actuator
+states in hibernate?
+executedUPdate and executeQuery

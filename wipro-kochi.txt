@@ -1,0 +1,99 @@
+31st
+-----------------------------------------------
+
+[15:08] Rajan Mathibalan (Americas 1 - iDEAS-ER&D)
+    class A{​
+int a =5;
+public static void main(String arg[]){​
+System.out.println("Main method is called");
+System.out.println(a);
+}​
+}​
+
+error: non-static variable a cannot be referenced from a static context
+		System.out.println(a);
+		                   ^
+1 error
+
+------------------------------------------
+class B{​
+int fun (int n)
+{​
+int result;
+result = fun (n - 1);
+return result;
+}​
+}​
+class Driver{​
+public static void main(String args[])
+{​
+B ib = new B() ;
+System.out.print(ib.fun(12));
+}​
+}​
+-------------------------------
+
+class A {​
+
+int sum( int a, int b){​
+return a+b;
+}​
+float sum(int a, int b){​
+return a+b;
+}​
+public static void main(String arg[]){​
+A obja = new A();
+int a = obja.sum(2,5);
+}​
+}​
+
+--------------------------------------------
+class B{​
+int calculate(int a, int b)
+{​
+try{​
+return a-b;
+}​catch(Exception e){​
+return a+b;
+}​finally{​
+return a*b;
+}​
+}​
+}​
+class Driver{​
+public static void main(String args[])
+{​
+B obj1 = new B();
+int result = obj1.calculate(2, 3);
+System.out.println("Result: " + result);
+}​
+}​
+--------------------------------------------------
+pathparameter and query parameter diff?
+stateless and stateful?
+
+A Stateful bean will have state associated with it for each request from the same client. 
+Stateless beans have no client specific state and a single instance could be used concurrently, threadsafe, between multiple clients requests.
+
+Also, what is the difference between stateful and stateless?
+
+In Stateless, server is not needed to keep the server information or session details to itself. In stateful, a server is required to maintain the current state and session information. 
+In stateless, server and client are loosely coupled and can act independently. In stateful, server and client are tightly bound.
+
+Also, what is stateful and stateless applications? A stateless app is an application program that does not save client data generated in one session for use in the next session with that client. 
+In contrast, a stateful application saves data about each client session and uses that data the next time the client makes a request.
+
+Stateless object is an instance of a class without instance fields (instance variables). The class may have fields, but they are compile-time constants (static final). 
+Immutable objects may have state, but it does not change when a method is invoked (method invocations do not assign new values to fields).
+
+Is HTTP stateful or stateless?
+
+HTTP is a stateless protocol, in other word the server will forget everything related to client/browser state. 
+Although web applications have made it virtually look like stateful. A stateless protocol can be forced to behave as if it were stateful.
+
+
+tomcat version different?
+starter
+jpa
+microservices
+can static methods access intance variables?

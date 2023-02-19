@@ -1,0 +1,40 @@
+
+UST
+----
+74th
+-----
+
+
+Table employee
+fetch firstname alias name as employeename
+
+SELECT firstName as employeeName From Employee;
+
+String str = "Mom";
+
+char ch;
+
+String rev ="";
+
+for(int i=str.length; i>=0; i--){
+
+ch = str.charAt(i);
+
+rev = rev + ch;
+
+}
+
+if(str.equals(rev)){
+
+System.out.println(str);
+
+} else{
+
+System.out.println(rev);
+
+}
+
+different thread states
+
+RAD - Rapid Application Development
+

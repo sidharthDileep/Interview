@@ -1,0 +1,80 @@
+[10:06] CHIRANJEEVI U (iDEAS-Cloud Transformation)
+    public class WiproTest{​
+
+ public static void main(String[] args) {​
+try {​
+go();
+}​ catch (IOException e) {​
+e.printStackTrace();
+}​ catch (FileNotFoundException e) {​
+e.printStackTrace();
+}​ catch (JAXBException e) {​
+e.printStackTrace();
+}​
+}​
+ public static void exceptionTest() throws IOException, JAXBException, FileNotFoundException{​
+}​
+}​
+​[10:08] CHIRANJEEVI U (iDEAS-Cloud Transformation)
+    public class WiproTest{​
+
+ public static void main(String[] args) {​
+try {​
+exceptionTest()
+}​ catch (IOException e) {​
+e.printStackTrace();
+}​ catch (FileNotFoundException e) {​
+e.printStackTrace();
+}​ catch (JAXBException e) {​
+e.printStackTrace();
+}​
+}​
+ public static void exceptionTest() throws IOException, JAXBException, FileNotFoundException{​
+System.out.println("wipro test");
+}​
+}​
+
+
+public class WiproTest{
+
+ public static void main(String[] args) {
+try {
+exceptionTest();
+} catch (Exception e) {
+e.printStackTrace();
+} catch (FileNotFoundException e) {
+e.printStackTrace();
+} catch (RuntimeException e) {
+e.printStackTrace();
+}
+}
+
+ public static void exceptionTest() throws IOException, JAXBException, FileNotFoundException{
+System.out.println("wipro test");
+}
+}
+
+@functionalInterface
+public interface PredicateTest<T> implents PredicateTest2 {
+boolean testTheString(T t);
+}
+
+@functionalInterface
+public interface PredicateTest2<T> {
+boolean testTheString(T t);
+}
+
+public class Test implents PredicateTest<T> ,PredicateTest2<T> {
+
+public static void main(String[]){
+
+Test t=new Test ();
+
+t.testTheString(t);
+}
+
+security spring
+
+exception hierarchy
+
+port change after depolyment

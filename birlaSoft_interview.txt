@@ -1,0 +1,21 @@
+static blocks?
+Java supports a special block, called a static block (also called static clause) that can be used for static initialization of a class. 
+This code inside the static block is executed only once: the first time the class is loaded into memory. 
+
+Can we print something on the console without creating main() method?
+
+It is very important question from the interview’s perceptive point. 
+The answer is yes we can print if we are using JDK version 1.6 or previous and if after that that it will throw an. error. 
+
+generics
+
+how classes are loaded in java?
+
+
+
+
+
+autowiring?
+
+IOC?
+

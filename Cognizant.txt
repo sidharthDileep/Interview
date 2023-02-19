@@ -1,0 +1,8 @@
+Cognizant
+------------
+
+1) HTTPMessageConverter
+2) Function of Servlet
+3) how do u maintain user session ( so that user does not need to relogin for each request)
+4) Orchestration and Choreography
+5) design patterns

@@ -1,0 +1,86 @@
+38th
+-----
+
+public int method(){
+try{
+system.out.println(50/0);
+return 1;
+} catch (Exception e) {
+system.out.println("Exception occurred");
+return 2;
+} finally{
+return 3;
+}
+return 4;
+}
+
+Main.java:43: error: unreachable statement
+    return 4;
+
+-------------
+
+class A {
+public static void method1(){}
+
+ private void method2(){}
+
+ public void method3() throws Exception{}
+}
+
+class B extends A{
+public static void method1(){}
+
+ private void method2(){}
+
+ public void method3(){}
+}
+
+In Java, methods declared as private can never be overridden, they are in-fact bounded during compile time.
+
+An overriding method can throw any unchecked exceptions, regardless of whether the overridden method throws exceptions or not. 
+However, the overriding method should not throw checked exceptions that are new or broader than the ones declared by the overridden method. 
+The overriding method can throw narrower or fewer exceptions than the overridden method.
+
+If Super class method throws an exception, then Subclass overriden method can throw the same exception or no exception, but must not throw parent exception of the exception thrown by Super class method.
+
+-------------------------
+
+public class A{
+
+public static void main(String[] a){
+A a = new A();
+a.method(null);
+}
+
+public void method(String a){
+sysout("String")
+}
+
+public void method(Object a){
+sysout("Object")
+}
+
+}
+-----------------------------------
+
+
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+Example: “()[]{}”
+Output : True
+
+Example: “([]}”
+Output: False
+
+Example: "({)}"
+Output: False
+
+Example: "{()}"
+Output: True
+
+
+----------------------------------
+
+indexes in DB?
+
+how many db is required in manytomany?

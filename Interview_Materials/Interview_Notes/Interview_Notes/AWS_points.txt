@@ -1,0 +1,222 @@
+Amazon GuardDuty is a threat detection service that continuously monitors your AWS accounts and workloads for malicious activity and delivers 
+detailed security findings for visibility and remediation.
+
+Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and 
+protect your sensitive data in AWS. 
+It does not have anything to do with Amazon GuardDuty.
+
+AWS Shield is a managed DDoS prevention and mitigation service, 
+and it doesn’t provide intelligent threat detection on an account-by-account basis.
+
+Amazon Detective automatically collects log data from your AWS resources and uses machine learning, statistical analysis, 
+and graph theory to build a linked set of data that enables you to easily conduct faster and more efficient security investigations - 
+but does not actively detect threats.
+
+Amazon Inspector is a fully managed vulnerability assessment tool - it doesn’t detect threat.
+
+AWS Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you.
+
+AWS Trusted Advisor is an online resource that helps to reduce cost, increase performance and improve security by optimizing your AWS environment.
+
+Amazon QuickSight is a scalable, serverless, embeddable, machine learning-powered business intelligence (BI) service built for the cloud.
+
+The AWS Web Application Firewall (WAF) is used to protect web applications or APIs against common web exploits. 
+Rules can be created that block traffic based on source IP address.
+
+AWS Service Catalog is used to create and manage catalogs of IT services that you have approved for use on AWS, 
+including virtual machine images, servers, software, and databases to complete multi-tier application architectures.
+
+AWS Config is a fully-managed service that provides you with an AWS resource inventory, configuration history, 
+and configuration change notifications to enable security and regulatory compliance.
+
+AWS Budgets to set reservation utilization or coverage targets and receive alerts when your utilization drops below the threshold you define. 
+Reservation alerts are supported for Amazon EC2, Amazon RDS, Amazon Redshift, Amazon ElastiCache, and Amazon Elasticsearch reservations.
+
+AWS Cost Explorer lets you visualize and understand your costs but AWS Budgets should be used for alerting based on forecast or actual usage.
+
+AWS Cost and Usage report is another tool that can be used to view usage for AWS services by category 
+but AWS Budgets should be used for alerting based on forecast or actual usage.
+
+AWS cloudTrail is used for logging API activity, it will not alert you based on usage of AWS services.
+
+The AWS Storage Gateway service enables hybrid cloud storage between on-premises environments and the AWS Cloud. 
+It seamlessly integrates on-premises enterprise applications and workflows with Amazon’s block and object cloud storage services through industry standard storage protocols.
+
+Amazon S3 Cross Region Replication (CRR)is used for copying data from one S3 bucket to another S3 bucket in another region. That is not an examples of hybrid cloud.
+
+Amazon Elastic File System (EFS) Amazon EFS is not a hybrid cloud storage solution. 
+With EFS you can mount file systems from on-premises servers, however it does not offer a local cache or method of moving data into the cloud.
+
+Amazon CloudFront is a content delivery network. It is used to get content closer to users, it is not a hybrid cloud storage solution.
+
+You can configure subnets and endpoints within the VPC section of AWS management console.
+
+EBS volumes and ELB must be configured in the EC2 section of the AWS management console and DNS records must be configured in Amazon Route 53.
+
+Amazon SageMaker is a managed Machine Learning service.
+With Amazon SageMaker, you can package your own algorithms that can then be trained and deployed in the SageMaker environment.
+
+AWS Artifact is your go-to, central resource for compliance-related information. It has nothing to do with Machine Learning.
+
+AWS Data Pipeline is a web service that helps you reliably process and move data between different AWS compute and storage services, 
+as well as on-premises data sources, at specified intervals. It does not use Machine Learning.
+
+Amazon Forecast is a time- series forecasting service based on machine learning (ML) and built for business metrics analysis. 
+Although it is based on Machine Learning, it does not allow you to bring your own algorithms.
+
+CloudWatch Logs Insights enables you to interactively search and analyze your log data in Amazon CloudWatch Logs. You can perform queries to help you more efficiently and effectively respond to operational issues. If an issue occurs, you can use CloudWatch Logs Insights to identify potential causes and validate deployed fixes.
+
+Amazon EventBridge is a serverless event bus that ingests data from your own apps, SaaS apps and AWS services and routes that data to targets.
+
+Amazon CloudWatch Logs streams is a sequence of log events that share the same source. Each separate source of logs in CloudWatch Logs makes up a separate log stream. This does not utilize queries.
+
+Amazon CloudWatch anomaly detection When you enable anomaly detection for a metric, CloudWatch applies statistical and machine learning algorithms. These algorithms continuously analyze metrics of systems and applications, determine normal baselines, and surface anomalies with minimal user intervention.
+
+AWS CloudHSM is a cloud-based hardware security module (HSM) that allows you to easily add secure key storage and high-performance crypto operations to your AWS applications.
+
+AWS Trusted Advisor is an online tool that provides you real time guidance to help you provision your resources following AWS best practices.
+
+Amazon QuickSight is a fast, cloud-powered business intelligence service that makes it easy to deliver insights to everyone in your organization.
+
+CloudTrail logs API activity, not performance or billing metrics.
+
+You can monitor your estimated AWS charges by using Amazon CloudWatch. When you enable the monitoring of estimated charges for your AWS account, the estimated charges are calculated and sent several times daily to CloudWatch as metric data.
+
+Billing metric data is stored in the US East (N. Virginia) Region and represents worldwide charges. This data includes the estimated charges for every service in AWS that you use, in addition to the estimated overall total of your AWS charges.
+
+The alarm triggers when your account billing exceeds the threshold you specify. 
+It triggers only when actual billing exceeds the threshold. 
+It doesn't use projections based on your usage so far in the month.
+
+You can use an AWS Direct Connect gateway to connect your AWS Direct Connect connection over a private virtual interface to one or more VPCs in your account that are located in the same or different Regions
+
+The AWS Storage Gateway service enables hybrid storage between on-premises environments and the AWS Cloud.
+
+The Gateway Virtual Tape Library can be used with popular backup software such as NetBackup, Backup Exec and Veeam. Uses a virtual media changer and tape drives.
+
+File gateway provides a virtual on-premises file server, which enables you to store and retrieve files as objects in Amazon S3.
+
+The volume gateway represents the family of gateways that support block-based volumes, 
+previously referred to as gateway-cached and gateway-stored modes.
+
+Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, 
+and data lakes, using AWS-designed hardware and machine learning to deliver the best price performance at any scale.
+
+Amazon Athena is a serverless query service which you can use to query S3 using standard SQL.
+
+Amazon EMR is a cloud big data platform for running large-scale distributed data processing jobs, 
+interactive SQL queries, and machine learning (ML) applications using open-source analytics frameworks such as Apache Spark, Apache Hive, and Presto.
+
+Included as part of the Enterprise Support plan, the Support Concierge Team are AWS billing and account experts that specialize in working with enterprise accounts.
+
+AWS Health API is available to all Business, Enterprise On-Ramp, or Enterprise Support customers. You can use the API operations to get information about events that might affect your AWS services and resources.
+
+
+AWS DDoS Response Team (DRT) This is not available through a support plan, but through the AWS Shield Advanced service.
+
+AWS technical account manager (TAM) You get a dedicated AWS TAM when you have Enterprise Support, and you get access to a pool of TAMs when you are using Enterprise On-Ramp.
+
+AWS Support concierge This is only available to Enterprise Support customers.
+
+AWS PrivateLink provides private connectivity between VPCs, AWS services, and your on-premises networks,
+without exposing your traffic to the public internet.
+
+AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytics.
+
+You can point AWS Glue to data stored on AWS, and AWS Glue discovers the data and stores the associated metadata (e.g. table definition and schema) in the AWS Glue Data Catalog. 
+Once cataloged, the data is immediately searchable, queryable, and available for ETL.
+
+Replication enables automatic, asynchronous copying of objects across Amazon S3 buckets. Buckets that are configured for object replication can be owned by the same AWS account or by different accounts. You can copy objects between different AWS Regions or within the same Region.
+
+S3 CRR
+Both source and destination buckets must have versioning enabled. The source bucket owner must have the source and destination AWS Regions enabled for their account. 
+The destination bucket owner must have the destination Region-enabled for their account.
+
+Amazon Simple Workflow Service (SWF) is a web service that makes it easy to coordinate work across distributed application components. 
+SWF enables applications for a range of use cases, including media processing, web application back-ends, business process workflows, and analytics pipelines, to be designed as a coordination of tasks.
+
+A virtual private gateway is the VPN concentrator on the Amazon side of the VPN connection. 
+You create a virtual private gateway and attach it to the VPC from which you want to create the VPN connection.
+
+As a customer on AWS you take responsibility for encrypting data. This includes encrypting data at rest and data in transit. 
+It’s also a customer’s responsibility to properly train their staff in security best practices and procedures for the AWS services they use.
+As a customer on AWS you take responsibility for encrypting data. This includes encrypting data at rest and data in transit. 
+Another security responsibility the customer owns is setting network and firewall configurations. 
+For instance, you must configure Network ACLs and Security Groups, and any operating system-level firewalls on your EC2 instances.
+All client-side and server-side encryption is a responsibility of the customer using the AWS Cloud.
+
+Amazon Elastic Block Store (EBS) volume is often described as a “virtual hard disk in the cloud”. EBS volumes are block-level storage volumes that are attached to EC2 instances much as you would attach a virtual hard disk to a virtual machine in a virtual infrastructure.
+
+An Amazon EFS filesystem is a file-level storage system that is accessed using the NFS protocol. 
+Filesystems are mounted at the file, rather than the block level and are therefore not similar to a virtual hard disk.
+
+Amazon S3 is an object-level storage service and is not mounted or attached. 
+You use a REST API over HTTPS to access objects in an object store.
+
+An Amazon Elastic Network Interface is a networking construct, not a storage construct.
+
+A NAT gateway is used for outbound internet access for instances running in a private subnet.
+
+Virtual Private Gateway is used for IPSec VPN connections to access a VPC.
+
+AWS Transit Gateway, you only have to create and manage a single connection from the central gateway into each Amazon VPC, on-premises data center, or remote office across your network. 
+Transit Gateway acts as a hub that controls how traffic is routed among all the connected networks which act like spokes.
+
+AWS Direct Connect gateway to connect your AWS Direct Connect connection over a private virtual interface to one or more VPCs in your account that are located in the same or different Regions.
+
+AWS Direct Connect connects you to a single Amazon VPC - not multiple VPCs in different Regions.
+
+An internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet. It therefore imposes no availability risks or bandwidth constraints on your network traffic.
+
+An internet gateway serves two purposes: to provide a target in your VPC route tables for internet-routable traffic, and to perform network address translation (NAT) for instances that have been assigned public IPv4 addresses.
+
+AWS PrivateLink provides private connectivity between VPCs, AWS services, and your on-premises networks, without exposing your traffic to the public internet.
+
+AWS VPN is a point-to-point connection between an on-premises location and a single Amazon VPC.
+
+AWS Client VPN is service allows end users to connect to AWS using a VPN client.
+
+Amazon Redshift is a fast, fully managed data warehouse that makes it simple and cost-effective to analyze all your data using standard SQL and existing Business Intelligence (BI) tools. 
+RedShift is a SQL based data warehouse used for analytics applications.
+
+Amazon Elasticsearch Service is involved with operational analytics such as application monitoring, log analytics and clickstream analytics.
+Amazon Elasticsearch Service allows you to search, explore, filter, aggregate, and visualize your data in near real-time.
+
+Amazon Athena is used to analyze data directly in S3 and Glacier using standard SQL queries.
+ 
+Amazon EMR big data processing using the Spark and Hadoop frameworks, Amazon EMR provides a managed service for processing vast amounts data.
+
+Amazon QuickSight provides a fast, cloud-powered business analytics service, that that makes it easy to build stunning visualizations and rich dashboards that can be accessed from any browser or mobile device.
+
+AWS Step Functions lets you coordinate multiple AWS services into serverless workflows so you can build and update apps quickly. 
+AWS Step Functions lets you build visual workflows that enable fast translation of business requirements into technical requirements.
+
+The six pillars of the AWS Well-Architected Framework are operation excellence, security, reliability, performance efficiency, cost optimization and sustainability.
+
+Quick Starts are built by AWS solutions architects and partners to help you deploy popular technologies on AWS, based on AWS best practices for security and high availability. These accelerators reduce hundreds of manual procedures into just a few steps, so you can build your production environment quickly and start using it immediately.
+
+Each Quick Start includes AWS CloudFormation templates that automate the deployment and a guide that discusses the architecture and provides step-by-step deployment instructions.
+
+APN Consulting Partners are professional services firms that help customers of all sizes design, architect, build, migrate, and manage their workloads and applications on AWS. Consulting Partners include System Integrators (SIs), Strategic Consultancies, Agencies, Managed Service Providers (MSPs), and Value-Added Resellers (VARs).
+
+AWS Enterprise Support is a support plan which provides a less than 15 minutes response time for business-critical system failure, and AWS Enterprise On-Ramp provides a less than 30 minutes response time for business-critical system failure.
+
+The AWS Health API is available to all Business, Enterprise On-Ramp, or Enterprise Support customers. You can use the API operations to get information about events that might affect your AWS services and resources.
+
+Included as part of the Enterprise Support plan, the Support Concierge Team are AWS billing and account experts that specialize in working with enterprise accounts.
+
+With the standard storage class you pay a per GB/month storage fee, and data transfer out of S3. Standard-IA and One Zone-IA have a minimum capacity charge per object. Standard-IA, One Zone-IA, and Glacier also have a retrieval fee. 
+You don’t pay for data into S3 under any storage class.
+
+Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, shared with an external entity. 
+This lets you identify unintended access to your resources and data, which is a security risk.
+
+Amazon OpenSearch Service makes it easy for you to perform interactive log analytics, real-time application monitoring, website search, and more. 
+OpenSearch is an open source, distributed search and analytics suite derived from Elasticsearch.
+
+AWS Control Tower provides the easiest way to set up and govern a secure, multi-account AWS environment, called a landing zone. 
+This is a governance service and is not related to Identity and Access Management
+ 
+AWS Systems Manager gives you visibility and control of your infrastructure on AWS. 
+Systems Manager provides a unified user interface so you can view operational data from multiple AWS services and allows you to automate operational tasks across your AWS resources.
+

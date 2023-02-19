@@ -1,0 +1,59 @@
+Morgan Stanley-1&2
+--------------------
+
+// Find the first non repeated char of the String
+// ababcabded
+// c
+
+import java.util.*;
+
+public class Solution {
+
+ public static void main(String[] args) {
+     
+     String str = "ababcabded";
+     
+     Map<Character, Integer> map = new LinkedHashMap<>();
+     
+     for(int i=0; i<str.length(); i++){
+         if(map.containsKey(str.charAt(i))){
+             map.put(str.charAt(i), map.get(str.charAt(i)) + 1);
+         } else {
+             map.put(str.charAt(i), 1);
+         }
+     }
+     
+     Optional<Character> value = map.entrySet().stream().filter(c -> c.getValue() == 1).map(c -> c.getKey()).findFirst();
+     System.out.println(value.get());
+   }
+}
+---------------------------------------------------------------------
+//sorting of array with 0 and 1s
+// 1,0,1,0,1,0,0,0,1,0
+// All 0s then all 1s
+
+public class Solution {
+
+
+ public static void main(String[] args) {
+     
+     int arr[] = {1,0,1,0,1,0,0,0,1,0};
+     int n = arr.length;
+     int count = 0;
+     for(int i=0; i<n; i++){
+         if(arr[i] == 0)
+            count++;
+     }
+        
+ }
+}
+------------------------------------------------
+
+Use of static method
+can we synchronize class? how it works?
+
+can we call static method by an object
+what causes String argumented function to be invoked null?
+washroom question
+searchApi
+JPA relation

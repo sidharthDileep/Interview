@@ -1,0 +1,64 @@
+35th
+-----
+
+[2:25 PM] Tanmay Naik
+    Find sum of squares of odd integers using stream api :
+L1 ={​​​1,2,3,4,5,6,7,8,9,10}​​​
+
+o/p : 1^2 + 3^2 + 5^2 + 7^2 + 9^2 ==> 165
+
+    list.stream()
+    .filter( e -> e%2 != 0)
+    .map( s -> s*s)
+    .sum();
+
+    public class Test{​​​
+public static void main(String []args){​​​
+Object o = new Object();
+o = "Tom";
+print(o);
+}​​​
+
+public static void print(Object o){​​​
+System.out.println("Inside Object :" + o.toString());
+}​​​
+
+public static void print(String o){​​​
+System.out.println("Inside String " +o);
+}​​​
+}​​​
+
+
+    public class Employee {​​​
+
+private int id;
+private String name;
+private float salary
+private List<Department> deptList = new ArrayList<Department>();
+@Override
+public boolean equals(Employee e) {​​​
+return true ;
+}​​​
+@Override
+public int hashCode() {​​​
+return id;
+}​​​
+}​​​
+HashMap<Employee,String> h1 = new HashMap<>();
+
+
+list final
+
+hshcode and eq
+
+why linkedList is suitable for frequest addition/deletion? list linkedlist
+
+linkedHashMap
+
+Optional
+
+try with resources
+
+ManyToMany
+
+

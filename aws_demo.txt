@@ -1,0 +1,17 @@
+
+
+request
+
+ACL (stateless)
+VPC
+SN
+
+SG
+ALB - Listner
+
+Target_Group
+
+ASG
+
+SG (stateful)
+EC2

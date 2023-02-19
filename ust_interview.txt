@@ -1,0 +1,36 @@
+Write Java Application to create HashMap and add 2-3 Records EMPID,EMPNAME(key,value) Add any dummy Records and print line by line
+
+
+Map<Integer, String> empRecords = new HashMap<>();
+
+empRecords.put(1, "Ramesh");
+empRecords.put(2, "Kiran");
+
+empRecords.forEach( (k, v) -> System.out.println("EmployeeName : " + k + " EmployeeId : " + v));
+
+abstract classes and interfaces
+
+design patterns
+
+final
+
+foreign key and primary key
+
+
+HR_Round
+----------
+
+what all learnings you have done?
+
+coordination within team?
+Our team was well coordinated, everyone was cooperating, nobody use to be underproductive. everyone will help each other. our team lead was very knowledgeble.
+
+how you been gettting through advice from leads?
+
+have you done any improvements for your project?
+Improvements I have done lately were, I fixed automation tests for few API's.
+
+have your advice been taken by the team?
+
+why are you looking out for a change?
+

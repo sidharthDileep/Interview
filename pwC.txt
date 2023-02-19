@@ -1,0 +1,44 @@
+PwC
+-----
+58th
+-----
+
+how spring scans components
+
+String s = "I am a boy";
+
+int num = 0;
+
+for(int i=0; i<s.length-1; i++){
+
+char ch = s.charAt(i);
+
+switch(ch){
+
+case 'a' : num++;
+		   break;
+
+case 'e' : num++;
+		   break;
+
+case 'i' : num++;
+		   break;
+
+case 'o' : num++;
+		   break;
+
+case 'u' : num++;
+		   break;
+
+default: "Wrong character";
+
+}
+
+
+
+System.out.println(s.length() - n);
+
+
+
+
+}

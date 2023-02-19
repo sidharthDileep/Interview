@@ -1,0 +1,1028 @@
+HSBC Questions:
+
+how to configure database details in spring boot
+Spring bean scope and use cases for bean scope?
+Caching Technique in java
+What is mean by immutable
+hashcode() and equal() method
+difference between comparable and comparator
+API Gateway & feign Client implementation
+What is use of docker?
+
+Write one REST API and explain the process in details
+Sort employee list by employee name using stream API
+
+Why we need to bind SSL certificate? how to renew SSL Certificate? what is time period for renew?
+How to generate SSL certificate?
+Explain Deployment process
+Git branching and commit process, how to resolve conflict?
+Agile methodology
+-----------------------------------------------------
+
+GS Interview:
+
+
+
+Microservices, async calls, Kafka (Depth concepts)
+
+Springboot, spring annotations, Rest Methods
+
+2 programs he gave and provided output based on java 8, but he expected java 7
+1- Sorting and filter employee details based on their age
+2- String manupilation 
+
+Implementation of swagger
+
+Git Clone command
+
+map split java8
+
+------------------------------------------------NT questionnaire----------------------------------------------------
+
+
+
+Security implementation of the recent project like authentication and authorization. JWT.
+
+
+
+Project architecture.
+
+
+
+Microservices Architecture.
+
+
+
+Cache implementation
+
+
+
+JUnit
+
+
+
+Java 8 -> stream, map, flatMap
+
+
+
+Laziness and performance of stream api
+
+
+
+SQL like, underscore wildcard
+
+
+
+Multithreading
+
+
+
+DB password changed while some Java Batch have active connection with DB doing changes to the records. What will happen with the intermediate changes
+made to the records and what will happen to the Batch.
+
+
+
+Kafka or any messaging queue.
+
+
+
+performance of static vs non static method for any utility class when calling the method millions of times per minute.
+
+------------------------------------------------------------------------------------------------------------------------------
+NT Interview Questions:
+
+1.Spring AOP
+
+2.@Before Advice and @After Advice and @Pointcut with code implementation.
+
+3.Service Discovery in Microservices
+
+4.Internal Working of HashMap and Concurrent HashMap
+
+5.Differnce bettween HashMap and HasTable
+
+6.Load Factor in HashMap
+
+7.Reverse a String without using Inbuilt Functions - Program
+
+8.Vertizontal Scaling in EC2 Instance
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Abhishek Malhotra - HSBC Questionnaire
+
+------------------------------------------------
+
+introduction
+
+in that I have mention my project so starting question was from microservices
+
+1.feign client
+
+2.how to call a microservice from another other than feign client
+
+3.api gateway
+
+4. how we can create it and how it it accessible to the user
+
+5.how to use load balancing and how I have used that in my project
+
+MySQL -> group by and order by and how does it work
+
+java 8 feature
+
+Java Stream intermediate and terminal function
+
+filter uses which function
+
+Java Stream implementation:-
+
+1.from a list we have to find the occurrence and print them according to occurrence and if two number occurrence are same so smaller one should come first.
+
+2. from a array list create 2 array list one of odd number one of even
+
+collection - set, list , map which we have used in that
+
+flow of microservice and annotations used with explanation
+
+jpa repository is class or interface
+
+how we create a native query
+
+security -oauth,oauth2,jwt
+
+git -code commit , create branch
+
+jenkins- cicd-pipeline
+
+Agile
+
+jira, service now
+
+kubernate
+---------------------Amar Kaware (NT)-----------------------
+
+what is marker interface, why is need it?
+use of cloneable interface?
+internal function of has map?
+collection? array list vs linkedlist?
+java 8 feature?
+default method in functional interface?
+find the highest number of word in paragraph?
+annotation using in spring boot?
+@springbootApplication annotation?
+diff between spring and spring boot?
+microservices architecture?
+find 3rd highest salary from employee table? - select salary from employee order by salary limit 2,1;
+self join in database?
+
+----------------------------------------------------
+
+---------------------Nitin (NT)-----------------
+
+Design principles
+
+factory design pattern ,abstract factory design pattern
+
+hash map in java 8 and before that
+
+concurrent hash map,
+
+list iterator and iterator
+
+remove duplicate from list without using set and do same by stream
+
+diff between spring and spring boot
+
+@qualifer ,@autowired ,@springbootapplication
+
+types of autowired
+
+microservice architecture in your project
+
+spring security, oAuth
+
+Cashed in hibernate
+
+Second level and Query level Cache
+
+find thirds highest salary
+
+join and types
+
+like and wild card operators and explains senarios
+
+--------------------------------------------------------
+
+
+[15:24] Elammukilan Ramasamy
+Programming Questions in GS for Java
+1.String abc = aabbccaaaad;
+Find the maximum count of  a max character and the starting index of maximum  character
+a -> 4 ; --> Highest count    Index ---> 7
+2. Find the maximum and mininum element using Binary Search Tree
+3.Implementation of Graph
+
+[15:25] Elammukilan Ramasamy
+Technical ---> Java 8 Features
+
+-------------------------------------------------------------
+
+1. What is ZooKeeper?
+2. What are the tools used for code quality ?
+3. Difference b/w sync and Async calls
+4. Implementation of Kakfa
+5. SpringBoot Annotations @Autowired, @Qualifier
+6. Git pull, PR , Approvers
+7. Without eclipse how do you raise PR request
+9. Difference b/w Application.properties and application.yml
+10. Deployment process in Prod and Pre-Prod env
+11. Euraka server implementation
+12. HashTable and Concurrent HashMap diff
+13. String str = "abcd@xyz@123abcd"; -> find count of each character
+14. String str = "abcd@xyz@123abcd"; -> Reverse individual words in a string o/p: dcba@zyx@dcba321
+--------------------------------------------------------------------------
+They will tell you one example and ask you to create REST service for that. And they will ask questions on this task.
+2. spring boot questions like advanteges
+3. your best tasks on which you learn best.(share your valuable experiance).
+[17:12] Aniket S Shelake
+design pattern
+
+[17:13] Aniket S Shelake
+they will ask you to write code for singleton design pattern OR other on which you have worked
+
+[17:14] Aniket S Shelake
+write custom immutable class
+
+-----------------------------------------------------------------------------------
+GS
+---
+[12:09] Nagaraj Krishnareddy
+
+1 Coding Question:
+    1. Provided input as distance from A->B and find the ways we can create or ways of path
+        using 1 step and 2 steps (i.e) if distance is 4 solution would be 1+1+1+1,1+2+1, 2+2, 1+1+2,2+1+1
+    2. Immutable class adding mutable objects and list
+    3. Deadlock
+
+4. create a bean classes and how to map one to many
+2: Mock Question :
+    1. Hashcode and equals methods in object class and their uses
+    2. HashMap internal implementation
+    3. Deadlock, transient keyword(Some more multithread questions)
+    4. Spring and spring boot diff
+    5. service discovery
+
+-------------------------------------------------------------
+
+Client GS: 2nd round
+
+Given an integer array [2,4,62,4,67,2,63,7,5]
+you have to find out ODD numbers count. using lambda
+
+Given an integer array [2,4,62,4,67,2,63,7,5]
+find multiplication result of above elements. like 2*4*62*4*... as go on. using lambda
+
+We have a Student class with rollNo, name, EnglishMarks, MathsMarks, ScienceMarks and we will have list of students.
+How you will find top 3 students from the list having total sum(marks) are higher.
+What you will do in case of thousand's of students.
+
+java 8 features. mostly asked lambda functions and functional interface.
+
+we have to develop one API. accept 2 numbers and return its addition.
+which HTTP method you will use and why?
+
+What is applicationContext. And what is bean.
+
+How you will find any unknown bean name?
+
+What is BeanCreationException and when and why it will occurs. How you will fixed that issue.
+
+What is @componentScan. Why and when we use.
+---------------------------------------------------------------------
+JPMC(Java + jenkins)
+
+Stack implementation to pop out max element first and rest in normal order
+funtional interface
+@Transaction and roll back in case of failure how do you acheive
+Application Caching Mechanism 
+Rest End point creation.
+previous specific project based.
+What is Dynamic method dispatch.
+Spring boot application configuration.
+jenkins mutipipeline and  variuos application configuration  using jenkins file and with out using jenkins file.
+Ansible agent connection from remote server using SSH keys.
+Production Deployment tool configuration.
+---------------------------------------------------------------------------------
+classNotFoundExceptio and NoClassDefinition
+disadvatages of microservices
+
+People who demonstrate integrity, respect, teaming and inclusiveness | 
+People with energy, enthusiasm and the courage to lead | 
+People who build relationships based on doing the right thing
+-----------------------------------------------------------------------
+JPMC - Interview Questions
+1.Spring Security Implementation with Outh and Jwt
+2.@Transaction Annotations
+3.@Different Types of Transaction
+4.Filters and Interceptor in Spring Boot
+5.Differnce between put and Post in rest api
+6.Implementation of api gateway in microservice
+7.Implementaion of Feign Client in Microservice
+8.Implementation of Circuit Breaker in Microservice
+9.Purpose of ConfigServer in Microservice
+10. Getting the employee whose department is Java and year of joining > 2015 in Java 8
+11.Creteria query in hibernate
+12.Purpose of CloudFront and Lambda implementation in as Services
+-------------------------------------------------------------------------------
+Sonar issues
+-------------
+Cognitive complexity
+null checks
+String reuse
+hardcoding parameter in query
+-------------------------------------
+
+[18:41] Geethanjali 1
+MS-->
+
+Exception in spring. How to throw common exception.
+
+Filter in spring MVC
+
+different layer of transaction is spring
+
+write TestCase for External API
+
+How to mock controller class
+
+Security in spring
+GIT commands how to push pull merge codeJava 8 featuresHow to create functional interface and use of the default and static methods in it
+How to create singleton class
+How can we break singletonDesign patternsAll the design pattern you know about and what and why you used it in your project
+Questions about previous projectHow the deployment was done and what kind of server was usedInstances of server used
+OptionalMap. Faltmap
+
+Coding:
+
+1)HashMap has Age and name. O/P -> sort the age in desc order.
+
+2)Collection class has employees total experience, skillset and name. O/P -> print employee name who has 5 years of experience with skill set python
+ like 1
+
+
+----------------------------------------------------------------------------------------------------
+[11:50] Tanya Garg
+Hi Team, refer below questions for BNYM interview-
+Features in Java 8.
+What are funtional interfaces and default methods.
+How to define functional interfaces. Annotation.
+Internal mapping of hashmap.
+When do you feel that you should add hashcode and equals methods. Are used in HashTable alse?
+Contract between hashCode and equals.
+What other approach use hashcode and equals methods. -Explain HashSet
+What is immutability.
+Looking for Good knowledge of Spring.
+What is Spring and advantages.
+Basic Annotations used.
+How to configure data base to spring project.
+Detailed discussion on previous and current projects. Entire flow, how provide security, DB connectivity.
+Roles and responsibility in the project. What issues faced while working on projecta and how you resolved?
+If any Security method used, explain.
+Which versions of Angular you worked on.
+How to create Component through CLI and manually. Explain in detail.
+Basic annotations used.
+How to share data between components.
+What are controller used for.
+Aggregate functions in SQL.
+How to connect API request endpoints(BE) with UI - HHT get, post, put - details
+ like 1
+
+-------------------------------------------------------------------------------------------------
+JPMC -
+
+Database question - filtering the distinct data from the table. 
+Ask about the project you worked on. Detailed Questions from the project.
+what is RBAC
+Garbage collection, cycle of Garbage collection.
+What is @controller used.
+String, string builder, string buffer
+Why string is Immutable? mutable Vs Immutable.
+Exception handling in Springboot. Syntax for writing exception handling.
+what is Interceptor in Springboot.
+Authentication Vs Authorization.
+Difference between Map and Hash Map.
+Ask for Knowledge in Cloud and Microservices.
+
+Code for Sorting the Hash map.
+Code for filtering unique data from 2 array List.
+Code for Iterating Map.
+-------------------------------------------------------------------------
+reverse a string without using extra variable
+
+Find all pairs of elements in whose sum is equal to a given number
+
+two dimensional array having name and number. Number of occurrence of name can be many. Find the max average of given name if there are multiple student with same name and take average of all
+
+[Nagaraj, Akila , Nagaraj,Mukil, Mukil,Akila] [ 20, 30, 20,30,40,60]
+
+Find the length of the largest substring with repeated character and the starting index of it.
+
+Find the first non repetitive character in the string
+
+Shortest path Algo based questions
+
+2nd largest element in an array
+-----------------------------------------------------------------
+WITH summary AS
+(SELECT d.city ct,
+ SUM(d.amount)/a.amt ratio
+FROM donor d
+JOIN (
+ SELECT city, SUM(amount) amt
+ FROM acceptor
+ GROUP BY city) a
+ON a.city = d.city
+GROUP BY d.city)
+-- get the maximum
+(SELECT ct, ratio
+FROM summary
+ORDER BY ratio DESC
+LIMIT 1)
+UNION ALL
+-- and the minimum
+(SELECT ct, ratio
+FROM summary
+ORDER BY ratio
+LIMIT 1)
+----------------------------------------------
+find duplicate IP in file
+linkedList -nth node
+22/7 upto non repeative
+system design
+-------------------------------------
+
+
+question asked in INFY-HSBC
+
+
+
+**********************************core Java************************************
+
+1. Can we overload a static method ?
+2. Can we override static method ?
+3. Can a contructor return value?
+4. can we run a method before main method?
+5. what is aggreation ?
+6. why java is not completely object oriented?
+7. wrapper class and its uses?
+8. can we run a program without static?
+9. access specifiers and there scope?
+10. generics method in java?
+11. finalize method
+12. how many times finalize is called?
+13. can we use this and super in same method or class?
+14. What is Dynamic method dispatch
+15. Difference between this and super
+16. what happens if we remove the static keyword from  psvm ?
+17. Array vs Linked List to add or remove elements
+
+********************************** Java 8 ************************************
+1. functional Interface
+2. can a functional interface inherite the another interface?
+3. type of inbuild functional interface?
+4. optional keyword
+5. method reference
+6. method of Date Time Api
+7. what are stream
+8. intermediate and terminate stream
+
+********************************** Spring Boot ************************************
+1. Entry point of spring application?
+2. @ComponentScan
+3. @ Restcontroller vs @Controller
+4. can we create non web application in spring?
+7. PUT vs POST
+8. HTTP status codes - 502
+9. How to change  the default port in spring boot application
+10. how to exclude default Tom cat server from Spring Boot application
+11. how to disable auto-configuration?
+12. difference between request mapping and get mapping
+
+---------------------------------------------------------------------------------------------
+
+Interview questions for FIL
+
+
+
+Annotations in spring boot?
+Asked about different annotations and why it is used?
+Flow of springbok application?
+Server used in spring boot application.
+What is hashing?
+What is hash code and equals method?
+What if we override only one of the methods?
+What if functional interface
+What functional interfaces were present before it was introduced in java 8
+What is the need of default and static method in FI?
+Can we override default methods? Explain why if yes or no
+What is singleton class? Write a singleton class? Why is it used?
+Comparator and comparable and sorting employee class based on the employee class data members.
+What is MVC architecture? Explain it in detail
+What is the difference between array list linked list and sets and when do we use them? Explain using scenario
+What is microservices? How do the communicate with each other?
+Authentication used in your projects.
+How authentication works when calling other microservices?
+How was deployment done?
+How did you check the logs and health metrics?
+What if a critical microservice stopped working? How will you debug and resolve it? Asked different scenarios in it.
+Have you used service now? What types of tickets can be created in it?
+How will you deal with an urgent issue that is assigned to different team that is directly affecting your application?
+
+Any different technology stacks you have worked on? If yes, then explain the project and work that you have done
+
+
+-------------------------------------------------------------------------------------
+
+Credit-Suisse
+
+1.Introduction
+2.Soild Principle
+2.Discussion on last project role and responsibility
+3.What is mean by immutable
+4.What is functional interface
+5.discussion on Java 8 features
+6.Spring boot advantage
+7.Spring bean scope and use cases for bean scope?
+8.Caching Technique in java
+9.Design pattern
+10.Unit testing
+11.Agile methodology
+12.Sort list of employees by salary and id using stream API
+13.Query on self join
+14.find first non repeating character in given string
+
+15. Get the average salaries of the employees from each department.
+------------------------------------------------------------------------
+1) How is JWT implemented in Springboot?
+2) How is OAuth security provided in SpringBoot application?
+3) Polymorphism concept in Oops? - 
+4) Can static method be overrided in Java?
+5) Exception Handling in Java?
+6) Explain HashMap internal working?
+7) Questions on HashMap? HashCode and Equals Method.
+8) Multiple techniques to program to find non-repeating characters in a String?
+9) Java 8 concepts and features?
+10) Small streams program in Java.
+11) Profiles and DB configuration in SpringBoot?
+12) Mutiple Annotations in SpringBoot?
+13) SQL Functions vs Procedural Language?
+14) Drop and Truncate concept in SQL.
+15) PartitionBy concept in SQL.
+16) AWS knowledge?
+
+Q.1) Project discussion?
+Q.2) Last Technical project discussion in detail?
+Q.3) Any work done on deploymnet part? 
+Q.4) Java 8 concepts
+Q.5) String Java program - You can refer HackerRank Java Programs
+Q.6) Java 8 Program - Streams/Filters/Maps problem 
+Q.7) SQL knowledge - Aggregate functions/ Group by/ Having / Order By 
+Q.8) Any Experience with Devops/AWS/Jenkins?
+-------------------------------------------------------
+
+JPA
+AOP
+logging
+https://www.geeksforgeeks.org/difference-between-functional-programming-and-object-oriented-programming/
+requestparam & pathVariable
+applicationcontext & beanFactory
+---------
+
+                             Interview Questions HSBC
+1-what test management tool you were using?
+2-explain bug life cycle.
+3-how you were generating report in your script?
+4-explain framework of last project.
+5-Which things were not automatable in your project?
+6-What is better Automation or manual testing?
+7-What is functional testing?
+8-What is the difference between windows and web application?
+9-Explain functionality of your project.
+10-How you were maintainging bugs in your project?
+11-Explain in detail about test cases writing and management.
+12-What are the test case strategies you have used.
+13-What is the diff between TDD and BDD framework.
+14-What collection is used in your framework.
+-------------------------------------------------------------
+JPMC:
+
+Stream APIs
+
+What is the use of Microservices
+
+Advantages of Springboot
+
+How is JWT implemented in Springboot?
+
+Implementing security into springboot application
+
+SQL query to Identify duplicates and delete them from a table
+
+Coding Questions using HashMap
+
+Simple streams program in Java.
+
+Java 8 features
+
+Functional Interfaces and Lambda Expressions
+
+What is actuator
+
+AWS knowledge
+
+How to handle exception in spring
+
+Filters and Interceptor in Spring Boot
+
+Security in spring
+
+API Authentication & Authorization
+
+Experience on cloud technologies.
+
+Use of @ComponentScan annotation
+
+Different ways to make 2 microservices communicate
+
+Discussion on last project role and responsibility
+
+Design pattern
+
+Sort employee list by employee or department table using stream API
+
+Code to remove duplicate elements from a list of integers using java 8 functionalities.
+---------------------------------------------------------------------------------------------
+-----------------------------MS----------------------------
+Previous Project explaination.
+What error/exception we get when we override static methods of parent and child classes?
+Program to reverse Singly Linked List? Explain the code
+What is Functional Interface and Can we extend another Functional Interface?
+What is Thread Dump?
+What is ExecutorService?
+Java code to find the duplicate elements from the list {1,2,2,3,4,5,4}
+Java 8 features
+What is Polymorphism?
+Can we override static and private methods?
+Differentiate Runnable and Callable Interface?
+Second highest number in array. {10,35,1,20,34,3} output: 34
+What will be the output of the below snippet:
+public class Main{
+    public static void main(String[] args) {
+        A a = new B();
+        A b = new A();
+        B c = new B();
+        B d = new A();
+        a.xyz();
+        b.xyz();
+        c.xyz();
+        d.xyz();
+        }}
+
+
+
+class A {
+    
+    public void xyz() {
+        System.out.println("Class A");
+    }
+}
+
+
+
+class B extends A {
+    public void xyz() {
+        System.out.println("Class B");
+    }
+}
+---------------------------------------------------------------------------------
+NT (Cash)
+--------------
+1) About the previous project and tech stack used there.
+2) Microservices componenets
+3) Microservices design Patterns
+4) Service Discovery
+5) Gateway? which one is used?
+6) diff btw yml and properties file? will the server starts if we are having only yml file?
+7) why config server is used? advantages of using it?
+8) How are external jars incorporated while deploying microservices?
+9) Agile methodologies?
+10) Security used in the project? how Oauth token is generated?
+11) Code quality tools used in the project?
+12) Logging framework used? How will you look up logs in microservices directly from AWS?
+13) Diff btw hashtable & concurrenthashmap?
+14) Java design patterns? Singleton?
+15) How many ways we can break singleton pattern?
+16) without properties file will the server starts?
+
+----------------------------------------------------------------
+find the duplet whose sum is -2
+input array = {0,-1,2,-3,1}
+sum = -2
+0/p = -3,1
+remove adjacent duplicate from string
+i/p = keexxllx
+o/p= kx
+i/p = abbaca
+o/p = ca
+
+use stack collection for above problem
+Java 8 features..
+covert list into map using Java 8 ---use toMap() method
+inheritance
+internal working hashmap
+Q1. Second highest number in array. {10,35,1,20,34,3} output: 34
+Q2. uniquely occured number in array. {1,1,3,3,4,5,5,8,8} output: 4
+Q3. no of time string occured in List using Java 8 {"aa","bb","aa","cc"}
+Q4. Why String Immutable?
+Q4. HashMap internal working?
+Q5. Spring Boot Project Questions?
+Program:
+To find highest and second highest element in one loop
+To return unique elements from an array by removing duplicate
+Oops concepts
+Some output prediction questions based on exception handling multi level inheritance
+Spring annotations
+SQL queries on Join group by order by
+hashmap, set , linkedlist
+Why to use interface when we have to define the method in the implementing class?
+Why factory design pattern is used?
+Program to reverse Singly Linked List? Explain the code.
+How is heap and stack memory assignent is done when refering the below code?
+public void mymeth(Area b){
+Area a=b;}
+public void second(){
+mymetho(new Square());
+}
+
+Why to use cloneable interface and what are its methods?
+List some of the interfaces in java.
+If 5,6,7,8,1,2 are the elements of a list then get the index of the element whose value if 6 using Balanced binary search.
+constructor chaining.
+Final keyword -
+Static Concept
+Collections Framework
+ConcurrentHashMap vs HashMap – how concurrent hash map implements thread safety.
+HashMap -  problem of modifying the key after insertion in has map
+Collision
+TreeMap - comparator and data structure behind it
+groupingBy problem in Java 8
+Custom ArrayList
+Remove Adjescentelements
+-----------------------------------------------------------
+
+Questions
+1) Exception in spring. How to throw common exception.
+2) Filter in spring MVC
+3) Different layer of transaction is spring
+4) Test case for External API
+5) How to mock controller class
+6) Security in spring
+7) HashMap has Age and name. O/P -> sort the age in desc order.
+8) Collection class has employees total experience, skillset and name. O/P -> print employee name who has 5 years of experience with python
+Database question - Filtering the distinct data from the table
+What is RBAC
+Garbage collection, cycle of Garbage collection.
+What is @controller used.
+String, string builder, string buffer
+Why string is Immutable? mutable Vs Immutable.
+Exception handling in Springboot. Syntax for writing exception handling.
+What is Interceptor in Springboot.
+Authentication Vs Authorization.
+Difference between Map and Hash Map.
+Ask for Knowledge in Cloud and Microservices.
+
+Code for Sorting the Hash map.
+Code for filtering unique data from 2 array List.
+Code for Iterating Map.
+1.Spring Security Implementation with Outh and Jwt
+2.@Transaction Annotations
+3.@s
+4.Filters and Interceptor in Spring Boot
+5.Differnce between put and Post in rest api
+6.Implementation of api gateway in microservice
+7.Implementaion of Feign Client in Microservice
+8.Implementation of Circuit Breaker in Microservice
+9.Purpose of ConfigServer in Microservice
+10. Getting the employee whose department is Java and year of joining > 2015 in Java 8
+11.Creteria query in hibernate
+12.Purpose of CloudFront and Lambda implementation in as Services
+Stream APIs
+What is the use of Microservices
+Advantages of Springboot
+How is JWT implemented in Springboot?
+Implementing security into springboot application
+SQL query to Identify duplicates and delete them from a table
+Coding Questions using HashMap
+Simple streams program in Java.
+Java 8 features
+Functional Interfaces and Lambda Expressions
+What is actuator
+AWS knowledge
+How to handle exception in spring
+Filters and Interceptor in Spring Boot
+Security in spring
+API Authentication & Authorization
+Experience on cloud technologies.
+Use of @ComponentScan annotation
+Different ways to make 2 microservices communicate
+Discussion on last project role and responsibility
+Design pattern
+Sort employee list by employee or department table using stream API
+Code to remove duplicate elements from a list of integers using java 8 functionalities.
+1.Using Comparator, write a program to sort the name , id and salary?
+2.What is Singleton design Pattern. Explain with Program
+3.How you make the program thread safe in the singleton program. What are the disadvantages of using singleton Pattern?
+4.What are Solid Principles?Explain in Detail?
+5.Fibonacci Series Program
+6.What is Recursion?Explain with program?
+7.D/b between SOAP & REST?
+8.What you mean by Pojo Class?
+9.Explain about Joins In Sql?
+10.D/B between UNION and UNION ALL?
+1.Sort the hash map on the basis of value Program.
+2.Find the largest string from a sentence and print it
+3.How do you deploy microservices?
+4.What is APIGateWay?
+5What is discovery server and why do we use it ?
+6.Difference  between put patch, post?
+7.Criteria Query and HQL in Hibernate
+8. Delete the duplicate id in sql
+9.On the basis of manager fetch the salary program
+10.Advantage of discovery server over load balancing.
+11.what is service layer in spring ?
+12.What is repository layer in spring ?
+
+----------------------------------------------------------
+Interview Questions EY Internal:
+
+What is debugging? Explain Step Into and Step Over.
+
+What is Maven plugin and use of it?
+
+Difference between Plugin and Dependancy.
+
+Difference between HashSet and LinkedHashSet.
+
+What is polymorphism? Explain runtime polymorphism in detail.
+
+What is child class and how is related to super class?
+
+Difference between == and .equals method?
+
+What is parallel processing and how you can achieve it?
+
+Explain multithreading and where you have used in your project with example.
+
+Coding Questions:
+
+Format given number with 6 digits.
+
+Find maximum maturity date Trade from given Array.
+
+Inheritance question.
+-----------------------------------------------------------
+[17:50] Harshal Khandelwal
+Interview Questions EY Internal (US Capital Market): 
+1. Difference between == and .equals method?
+2. what is object and resource pooling?
+3. what is interface and where we use it and its benefits?
+4. how to change the behavior of the class?
+5. difference between hashset and linkedHashSet?
+6. which collections we will use for multiThreading purpose?
+7. what is polymorphism and its types?
+
+8. Java 11 features (not Java 8)?
+
+9. what is deadlock?
+
+10. what is spring and it's advantages?
+
+11. difference between plugin and dependency?
+
+12. different scopes in spring?
+
+13. what are design patterns and how to break singleton class?
+
+------------------------------------------------------------------
+MS Interview Questions:
+
+coding question to dry run and predict the output on CodePair link
+
+question based on Overriding, Multilevel inheritance, method hiding
+
+Making class as key in HashMap
+
+Dutch National Flag problem
+
+Annotation used In SpringBoot for Autowiring/ Dependency Injection
+----------------------------------
+Interview Questions for Morgan Stanley:
+
+Question will be on your Project. Explain your project and answer to given questions.
+
+Oops concept.
+
+Method overloading and overriding its examples.
+
+Why String is immutable.
+
+What happen when string is mutable.
+
+How we can create custom immutable class.
+
+How we can create custom singleton class.
+
+Difference between interface and abstract class.
+
+How many default methods we can have in the interface.
+
+How HashMap and HashSet works internally.
+
+What happen If we add different value in map with existing key.
+
+What is difference between Spring boot and spring MVC
+
+Can we use embedded DB i.e. H2 in production.
+
+How you will integrate spring boot application with database.
+
+What is Actuator. How we integrate this in spring boot.
+
+Explain steps and thoughts If you requested to design, write REST service in spring boot. Cross questions on your answer.
+
+Explain Joins in SQL. Why we use, What are the types and explain each type.
+
+How you will improve your application when there is an API which is working fine. But suddenly requests came in thousands/sec.
+
+Why we use indexing.
+
+Questions on linux bash. How you will call any API through bash command.
+
+Explain your steps/actions when any requirement came and you want complete that requirement.
+
+If you stuck anywhere while development/requirement gathering then what you will do.
+
+Most questions will be on those skills which are mentioned in your resume.
+---------------------------------------------------------------------------------
+
+Morgan Stanley questions:
+
+About tech stack, and rating/5 mostly for java, collection, etc.
+
+regarding projects and agile methodology.
+
+oops concept with live examples.
+
+interface and abstract class diff. when we use what.
+
+can we use static keyword in polymorphism
+
+Internal working of hashMap.
+
+Can we use custom objects as key in hashmap. and its implementation.
+
+given string "Morgan Stanley"
+we have to find out first repeating character index.
+
+-------------------------------------------------------------------------
+
+2nd round GS - Sinha, Rachit R.
+About your project, role, responsibilities.
+Q1- Core Java and Java 8 questions
+Q2- What are the collections you’ve worked
+Q3- Explain how SET works internally, SortedSet, treeSet. and its insertion order.
+Q5- Explain how hasmap works internally, LinkedHashmap and its working and insertion order.
+Q6- How set checks not to add duplicate values
+How we add string in Set.
+static keyword in java.
+Find output question on static.
+Can we initialize static variable in constructor.
+@configuration in spring,
+What is @Bean,
+what is scope, default scope of bean. What is exact meaning of singleton scope.
+Can we write @Scope() at class level.
+
+-------------------------------------------------
+when to use int, float
+JDBC?
+Crud/Pagination repo?
+access token/refresh token?
+how to preserve token?
+session tracking and management?
+transaction management?
+local and centralized caching?
+
+
+-----------------------------------

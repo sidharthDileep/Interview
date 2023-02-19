@@ -1,0 +1,52 @@
+40th
+-----
+Wipro
+-----
+
+class EmployeeAgeInvalid extends RuntimeException{
+
+	super("Age is invalid");
+	
+}
+
+@RestController
+@RequestMapping("/employees")
+class employeeController{
+
+@GetMapping("/{id}")
+ResponseEntity<Employee> employeeMethod(@PathParameter id){
+
+
+}
+
+
+
+
+
+
+}
+
+@Table
+
+
+@Id
+@Generated()
+@Colomn("emp_id")
+int id;
+
+List<Integer> list = new ArrayList<>();
+
+list.add(1);
+list.add(2);
+
+
+Map<Integer, List> map = new HashMap<>();
+
+map.put(1, list);
+
+map.forEach((k, v) -> System.out.println( k + " " + v));
+
+SELECT salary FROM Employee ORDER BY salary DESC;
+
+SELECT * FROM Employee ORDER BY emp_id DESC limit 1;
+

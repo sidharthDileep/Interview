@@ -1,0 +1,23 @@
+CGI
+----
+63rd
+-------
+
+volatile 
+Using volatile is yet another way (like synchronized, atomic wrapper) of making class thread-safe. 
+Thread-safe means that a method or class instance can be used by multiple threads at the same time without any problem.
+
+java 8
+why implementing class is programmed to interface
+why interface
+post and put
+soap
+wsdl
+why spring boot
+jenkins
+er file
+junits
+
+transient
+atomic 
+collections

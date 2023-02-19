@@ -1,0 +1,375 @@
+Publicis Sapient
+------------------
+83rd
+-----
+
+//find out duplicate elements and their duplication count from given array
+int[] intArray = {2,1,3,6,9,1,2,3,9,4,7,2,56,34,21,34,56,2,99};
+
+//using array iteration
+int[] dupicateArray = new int[20];
+int[] countArray = new int[20];
+int k = 0;
+int t=0;
+int count = 0;
+for(int i=0; i<intArray.length; i++){
+  for(int j=1; j<intArray.length; j++){
+    if(intArray[i] == intArray[j]){
+      duplicateArray[k] = intArray[i];
+      countArray[t]++;
+    }
+  }
+  k++;
+  t++;
+}
+
+for(int w=0; w<duplicateArray.length; w++){
+  System.out.println("Element : " + duplicateArray[w] + " "  + "Duplication : " + countArray[w]);
+}
+
+
+//using collection
+
+for(int i=0; i<intArray.length; i++){
+  map.put(intArray[i], map.getOrDefault(intArray[i], 1) + 1);
+}
+Map.Entry<Integer, Integer> entry = map.entrySet();
+
+for(int i: entry){
+  if(entry.getValue(i) > 1){
+    System.out.println("Element : " + entry.getKey() + " "  + "Duplication : " + entry.getValue());
+  }
+}
+
+
+//using java stream
+
+List<Integer> list = Arrays.asList(intArray);
+
+for(int i=0; i<intArray.length; i++){
+  map.put(intArray[i], map.getOrDefault(intArray[i], 1) + 1);
+}
+
+list.stream()
+    .filter()
+
+map.stream()
+    .filter(a -> a.getValue() > 1)
+    .forEach( (k, v) -> System.out.println("Element : " + k + " "  + "Duplication : " + v););
+    
+
+
+//create one custom exception class
+
+
+public CustomException extends RuntimeException{
+  CustomException(){
+    super("This is not permitted..");
+  }
+}
+
+
+//immutable
+class final Order implements Comparable{
+  
+  @Override
+  public int compare(Order order){
+    return orderId.compareTo(order.getOrderId());
+    
+    
+  }
+  
+  private final int orderId;
+  private final int orderAmount;
+  private Date orderDate;
+  
+  public getOrderId(){
+    return this.orderId;
+  }
+  
+  public getOrderAmount(){
+    return this.orderAmount;
+  }
+  
+  public getOrderDate(){
+    Date temp = new Date();
+    temp = this.orderDate;
+    return temp;
+  }
+  
+  Order(int orderId, int orderAmount, Date orderDate){
+    this.orderId = orderId;
+    this.orderAmount = orderAmount;
+    Date temp1 = new Date();
+    temp1 = orderDate
+  }
+  
+  @Override
+  public Integer hashCode(){
+    return hash(this);
+  }
+  
+  @Override
+  public Boolean equals(){
+    
+  }
+  
+  
+}
+
+
+public OrderIdComparator extends Comparator<Order>{
+  public int compare(Order order){
+    return orderId.comapreTo(order.getOrderId());
+      }
+}
+
+Collections.sort(Order, OrderIdComparator);
+
+
+
+orderList;
+
+orderList.stream()
+         .compare(Comparator.comparing(OrderIdComparator))
+
+
+
+//is-a has-a
+
+
+class Student{
+  
+  int id;
+  
+  String name;
+  
+  class Address{
+    
+  int houseNo;
+  String streetName;
+  
+  }
+  
+  Course course = new Course();
+  
+}
+
+class Course{
+  int courseId;
+  String courseName;
+  
+}
+
+
+
+interface test1{
+    int add(int var1, int var2);
+    
+    default int addMe(int x, int y){
+        return x + y;
+    }
+    static int addStatic(int a, int b){
+        return a + b;
+    }
+
+}
+
+interface test2{
+    int add(int var1, int var2);
+    
+    default int addMe(int x, int y) {
+        return x + y;
+    }
+
+    static int addStatic(int a, int b){
+        return a + b;
+    }
+}
+
+
+
+class ImplememntInterface implements test1,test2{
+  int addMe(){
+    Default.super.test1;
+  }
+  
+  
+}
+
+////Singleton
+class Singleton{
+  Singleton singleton;
+  
+  private Singleton(){
+    
+  }
+  
+  public static Synchronized getSingleton(){
+    if(singleton == null){
+      return new Singleton;
+    }
+    
+    return singleton;
+  }
+  
+}
+
+/////factory 
+
+class Factory{
+  
+  public float getArea();
+  
+  
+}
+
+class Square extends Factory{
+  public float getArea(){
+    
+  }
+}
+
+class Rectangle extends Factory{
+  public float getArea(){
+    
+  }
+}
+
+class FactoryImpl{
+  
+  public Factory getFactory(Factory f){
+    if(f isinstanceof Square){
+      return new Square();
+    } else if(f isinstanceof Rectangle){
+      return new Rectangle();
+    }
+  }
+  
+}
+
+
+class Student{
+  
+  private int id;
+  private String name;
+  private String address;
+  private int age;
+  
+  Student(int id, String name){
+    this.id = id;
+    this.name = name;
+  }
+  
+  public get
+  
+  
+}
+
+@FunctionalInteface
+interface Sum{
+  public int add(int a, int b);
+}
+
+
+Sum s = (i, j) -> {
+  return a + b;
+}
+import java.util.*;
+
+Executor executor = Executors.newFixedThreadPool(10);
+
+class ThreadEx implements Runnable{
+  public void run{
+    System.out.println("Executed");
+  }
+}
+
+Thread t = new Thread(ThreadEx);
+Thread t2 = new Thread(ThreadEx);
+Thread t3 = new Thread(ThreadEx);
+t.start();
+
+class ThreadTwo extends Thread{
+  public void run(){
+    System.out.println("Executed");
+  }
+}
+
+ThreadTwo t0 = new Thread();
+
+t0.start();
+
+Student student = new Student();
+
+Student student2 = new Student();
+
+student.wait();
+
+student2.notify();
+
+@JmsListner("destination")
+public class Listen{
+  
+  
+  
+}
+
+
+Employee ---->  emp_id,emp_name,emp_joining_date,emp_releaving_date,emp_manager_id
+Project ----->. proj_id,proj_name,proj_start_date,proj_end_date,emp_id
+
+//fetch all employees under each project
+//prepare a query and use native query in repository layer
+
+@Entity
+class Employee{
+  
+  private int emp_id;
+  private String emp_name;
+  private Date emp_joining_date;
+  private Date emp_releaving_date;
+  private int emp_manager_id;
+  
+  
+  
+}
+
+class Project{
+  
+  private int proj_id;
+  private String proj_name;
+  private Date proj_start_date;
+  private Date proj_end_date;
+  
+  @ManyToMany
+  @JoinColomn(emp_id)
+  private int emp_id_f;
+
+  
+  
+  
+}
+
+
+
+class Repository extends JpaRepository<Employee, int>{
+  
+  
+}
+
+
+class Test{
+  
+  @NativeQuery("SELECT * FROM Employee e JOIN Project p ON e.emp_id = p.emp_id_f")
+  
+}
+
+
+GIVEN a valid POST request
+When service is called
+Then a OK Response is received
+
+
+
+

@@ -1,0 +1,45 @@
+56th
+-----
+Capegemini
+
+main method: can we run without main
+static in main
+
+a scenario where we are having synchronized and main method , what will be the flow?
+
+
+why java oop
+mark
+hashmap
+set
+multiple spring config
+
+
+String str = "REvers";
+String rev = "";
+char ch;
+
+for(int i=str.length-1; i>=0; i--){
+
+ch = str.charAt(i);
+rev = rev + 
+
+}
+
+scopes in a bean
+
+which is better microservices or monolithic
+
+String str = "REvers";
+String rev = "";
+char ch;
+
+for(int i=str.length-1; i>=0; i--){
+
+ch = str.charAt(i);
+rev = rev + 
+
+}
+
+
+

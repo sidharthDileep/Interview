@@ -1,0 +1,78 @@
+Edifixio-Atos
+---------------
+54th
+-----
+
+
+1)Given a number
+12258
+Translate the number to String
+Output:
+abbeh
+aveh,
+abyh,
+lbeh,
+lyh
+
+Input : 123
+Output: abc,lc,aw
+
+
+int[] n = 12258;
+int r1 = 0;
+int r2 = 0;
+int sum = 0;
+
+for(int i=0; i<n.length-1; i++){
+
+r1 = n[i];
+r2 = n[i+1];
+
+switch(r1){
+
+case 1: System.out.println(a);
+
+
+
+default: System.out.println("Wrong input");
+
+
+}
+if( i = n.length()- 1){
+switch(r2){
+
+case 1: System.out.println(a);
+
+
+
+default: System.out.println("Wrong input");
+
+
+}
+}
+
+
+
+}
+
+for(int i=0; i<n.length-1; i++){
+
+r1 = n[i];
+r2 = n[i+1];
+s = r1 + r2;
+
+if(s <= 26){
+
+switch(s){
+
+case 1: System.out.println(a);
+
+case 2: System.out.println(b);
+
+default: System.out.println("Wrong input");
+
+}
+
+}
+
+}

@@ -1,0 +1,26 @@
+L&T Infotech
+--------------
+112th
+--------
+
+
+Optional<String> name = list.stream()
+				  .filter(e -> e.getId() == 111)
+				  .findFirst();
+				  
+stream() and parellel stream()?
+				  
+post filter
+
+hash collision in java 8
+
+interceptors in spring boot
+
+diff singleton and immutability
+
+breaking in singleton
+
+role based authentication
+
+microservices
+	

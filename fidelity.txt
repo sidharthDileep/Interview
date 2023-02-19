@@ -1,0 +1,11 @@
+Fidelity
+--------
+51st
+-----
+
+how do you take post request elements inside?
+how do you handle errors to consumers?
+if there 3 dbs and if 2 of them failed what will we do? partial success 206/207?
+@Transactional?
+throw and throws?
+String object and literal?

@@ -1,0 +1,35 @@
+MS-Interview
+-----------------
+1) Implementation of ArrayList
+2) Stock prices in an array. we need to find the highest price and the corresponding day
+3) diff btw concurrent collection and synchronized collections
+4) implementation of hashmap
+5) java 8 features
+6) LinkedList implementation
+7) when to use arrayList and linkedlist
+8) project business cases
+9) when will we use interface and abstract class?
+
+-------------------------------------
+MS-2
+
+Morgan Stanley - Interview
+1) why char array is better than String in storing passwords
+2) how will you compare a word in a large file? Optimised solution?
+3) Update and delete query in SQL
+4) JOIN query in SQL
+5) bubbleSort?
+6) when will String gets garbage collected?
+7) what is interning?
+8) fibonocci?
+9) Singleton?
+10) Springboot over spring?
+11) diff btw DROP, DELETE and TRUNCATE?
+12) Java 8 features?
+13) what are lambda expressions? How it works?
+14) default methods in interaces?
+15) primary key and unique key? can primary key have null?
+16) Disadvantages of REST?
+17) difference between Singleton and static class?
+
+---------------------------------------------

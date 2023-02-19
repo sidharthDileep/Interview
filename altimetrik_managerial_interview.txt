@@ -1,0 +1,9 @@
+39th
+-----
+altimetrik -Managerial
+---------------------------
+
+microservices communication, asynchronous
+employee data architecture? how do you convert to json?
+external services?
+estimation of stories

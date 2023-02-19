@@ -1,0 +1,22 @@
+TSYS
+-------
+77th
+----
+
+
+public void run(){
+
+System.out.println("Sidharth");
+
+}
+
+Runnable runnable  = () -> Sys;
+
+List<Employee> employee = employees.stream()
+								   .filter( a -> a.getName == "Sidharth")
+								   .filter( e -> e.getAge < 25)
+								   .collect(Collectors.toList());
+								   
+
+
+

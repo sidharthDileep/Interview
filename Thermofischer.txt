@@ -1,0 +1,40 @@
+Thermofischer
+---------------
+72nd
+-------
+
+
+callable
+patch
+Options
+rest api to upload files
+executor framework
+lombok
+functional programming
+
+
+
+  *
+ * *
+* * *
+	
+int r = n;
+
+
+for(int i=0; i<n; i++){
+
+	for(int j=r-1; j>0; j++){
+	
+		System.out.print("\t");
+	}
+	
+	r--;
+
+	for(int k=0; k<=i; k++){
+	
+		System.out.print("*");
+	}
+	
+	System.out.println("\n");
+	
+}

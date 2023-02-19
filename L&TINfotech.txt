@@ -1,0 +1,23 @@
+L&T Infotech
+-------------
+50th
+------
+
+
+scopes? difference?
+The scope of a bean defines the life cycle and visibility of that bean in the contexts we use it.
+
+The latest version of the Spring framework defines 6 types of scopes:
+
+singleton
+prototype
+request
+session
+application
+websocket
+The last four scopes mentioned, request, session, application and websocket, are only available in a web-aware application.
+
+
+static blocks?
+estimation of stories?
+

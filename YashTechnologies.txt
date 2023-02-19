@@ -1,0 +1,21 @@
+Yash Technologies
+-------------------
+76th
+-----
+
+can overriden method throw
+why optional benficial over null
+FI
+static in 2 interfaces
+streams
+lazy streams
+checked exception
+left rotate array of 5 by 2
+integer array reverse
+microservices
+why api gateway
+expecting a exception junit - assertions
+triggers
+inner join
+self join
+

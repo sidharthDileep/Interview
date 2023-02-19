@@ -1,0 +1,195 @@
+HSBC Questions:
+
+how to configure database details in spring boot
+Spring bean scope and use cases for bean scope?
+Caching Technique in java
+What is mean by immutable
+hashcode() and equal() method
+difference between comparable and comparator
+API Gateway & feign Client implementation
+What is use of docker?
+
+Write one REST API and explain the process in details
+Sort employee list by employee name using stream API
+
+Why we need to bind SSL certificate? how to renew SSL Certificate? what is time period for renew?
+How to generate SSL certificate?
+Explain Deployment process
+Git branching and commit process, how to resolve conflict?
+Agile methodology
+
+GS Interview:
+
+
+
+Microservices, async calls, Kafka (Depth concepts)
+
+Springboot, spring annotations, Rest Methods
+
+2 programs he gave and provided output based on java 8, but he expected java 7
+1- Sorting and filter employee details based on their age
+2- String manupilation 
+
+Implementation of swagger
+
+Git Clone command
+
+map split java8
+
+------------------------------------------------NT questionnaire----------------------------------------------------
+
+
+
+Security implementation of the recent project like authentication and authorization. JWT.
+
+
+
+Project architecture.
+
+
+
+Microservices Architecture.
+
+
+
+Cache implementation
+
+
+
+JUnit
+
+
+
+Java 8 -> stream, map, flatMap
+
+
+
+Laziness and performance of stream api
+
+
+
+SQL like, underscore wildcard
+
+
+
+Multithreading
+
+
+
+DB password changed while some Java Batch have active connection with DB doing changes to the records. What will happen with the intermediate changes
+made to the records and what will happen to the Batch.
+
+
+
+Kafka or any messaging queue.
+
+
+
+performance of static vs non static method for any utility class when calling the method millions of times per minute.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Abhishek Malhotra - HSBC Questionnaire
+
+------------------------------------------------
+
+introduction
+
+in that I have mention my project so starting question was from microservices
+
+1.feign client
+
+2.how to call a microservice from another other than feign client
+
+3.api gateway
+
+4. how we can create it and how it it accessible to the user
+
+5.how to use load balancing and how I have used that in my project
+
+MySQL -> group by and order by and how does it work
+
+java 8 feature
+
+Java Stream intermediate and terminal function
+
+filter uses which function
+
+Java Stream implementation:-
+
+1.from a list we have to find the occurrence and print them according to occurrence and if two number occurrence are same so smaller one should come first.
+
+2. from a array list create 2 array list one of odd number one of even
+
+collection - set, list , map which we have used in that
+
+flow of microservice and annotations used with explanation
+
+jpa repository is class or interface
+
+how we create a native query
+
+security -oauth,oauth2,jwt
+
+git -code commit , create branch
+
+jenkins- cicd-pipeline
+
+Agile
+
+jira, service now
+
+kubernate
+---------------------Amar Kaware (NT)-----------------------
+
+what is marker interface, why is need it?
+use of cloneable interface?
+internal function of has map?
+collection? array list vs linkedlist?
+java 8 feature?
+default method in functional interface?
+find the highest number of word in paragraph?
+annotation using in spring boot?
+@springbootApplication annotation?
+diff between spring and spring boot?
+microservices architecture?
+find 3rd highest salary from employee table?
+self join in database?
+
+----------------------------------------------------
+
+---------------------Nitin (NT)-----------------
+
+Design principles
+
+factory design pattern ,abstract factory design pattern
+
+hash map in java 8 and before that
+
+concurrent hash map,
+
+list iterator and iterator
+
+remove duplicate from list without using set and do same by stream
+
+diff between spring and spring boot
+
+@qualifer ,@autowired ,@springbootapplication
+
+types of autowired
+
+microservice architecture in your project
+
+spring security, oAuth
+
+Cashed in hibernate
+
+Second level and Query level Cache
+
+find thirds highest salary
+
+join and types
+
+like and wild card operators and explains senarios
+
+--------------------------------------------------------
